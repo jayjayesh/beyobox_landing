@@ -87,6 +87,7 @@ class AppColors {
 
   // Button Color
   static const Color buttonPrimary = primary; //Color(0xFF5E98D2);
+  static const Color buttonGray = Color(0xff2E2E2E);
   static const Color buttonGoogle = Color(0xFFFE584B);
   static const Color buttonFacebook = Color(0xFF3E93FF);
   static const Color buttonNotificationDecline = Color(0xFF9C9C9C);

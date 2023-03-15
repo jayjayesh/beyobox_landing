@@ -6,6 +6,8 @@ import 'app_colors.dart';
 //   busy,
 // }
 
+enum DashboardTab { home, services, projects, clients, blogs }
+
 enum USER_TYPE {
   none,
   admin,

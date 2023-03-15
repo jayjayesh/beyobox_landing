@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:landing/src/features/home_feature/blog_page/blog_page.dart';
+import 'package:landing/src/features/home_feature/client_page/client_page.dart';
+import 'package:landing/src/features/home_feature/home_page/home_page.dart';
+import 'package:landing/src/features/home_feature/project_page/project_page.dart';
+import 'package:landing/src/features/home_feature/service_page/service_page.dart';
 import 'package:landing/src/shared/utility/app_const.dart';
 import 'package:landing/src/shared/utility/app_extensions.dart';
 import 'package:landing/src/shared/utility/app_scaffold_wraper.dart';
-import 'package:landing/src/shared/utility/app_strings.dart';
-import 'package:landing/src/shared/widgets/app_button_elevated.dart';
+import 'widgets/dashboard_header_widget.dart';
 
 class DashboardPage extends StatefulWidget {
   const DashboardPage({super.key});
@@ -14,42 +18,60 @@ class DashboardPage extends StatefulWidget {
   State<DashboardPage> createState() => _LandingPageState();
 }
 
-class _LandingPageState extends State<DashboardPage> {
+class _LandingPageState extends State<DashboardPage> with TickerProviderStateMixin {
+  late TabController _tabBarController;
+  static const List<Widget> _tabBarViews = [
+    HomePage(),
+    ServicePage(),
+    ProjectPage(),
+    ClientPage(),
+    BlogPage(),
+  ];
+
+  @override
+  void initState() {
+    super.initState();
+    _tabBarController = TabController(length: _tabBarViews.length, vsync: this);
+  }
+
   @override
   Widget build(BuildContext context) {
     return AppScaffoldWrapper(
       child: Scaffold(
         body: Padding(
           padding: const EdgeInsets.symmetric(horizontal: AppConst.defaultHorizontalPadding),
-          child: SingleChildScrollView(
-            child: Column(
-              children: [
-                Container(
-                  padding: const EdgeInsets.symmetric(vertical: 15),
-                  child: Row(
-                    children: [
-                      Expanded(
-                        child: Text(
-                          AppStrings.dashboardBeyoBoxSolution,
-                          style: Theme.of(context).textTheme.displaySmall,
-                        ),
-                      ),
-                      //const Spacer(),
-                      AppButtonElevated(text: AppStrings.dashboardButtonTextHome, onPressed: () {}),
-                      10.horizontalSpace(),
-                      AppButtonElevated(text: AppStrings.dashboardButtonTextService, onPressed: () {}),
-                      10.horizontalSpace(),
-                      AppButtonElevated(text: AppStrings.dashboardButtonTextProjects, onPressed: () {}),
-                      10.horizontalSpace(),
-                      AppButtonElevated(text: AppStrings.dashboardButtonTextClients, onPressed: () {}),
-                      10.horizontalSpace(),
-                      AppButtonElevated(text: AppStrings.dashboardButtonTextBlog, onPressed: () {}),
-                      10.horizontalSpace(),
-                    ],
+          child: Column(
+            children: [
+              20.verticalSpace(),
+              DashboardHeaderWidget(
+                tabBarController: _tabBarController,
+                onPressedHome: () {
+                  _tabBarController.animateTo(0);
+                },
+                onPressedService: () {
+                  _tabBarController.animateTo(1);
+                },
+                onPressedProject: () {
+                  _tabBarController.animateTo(2);
+                },
+                onPressedClient: () {
+                  _tabBarController.animateTo(3);
+                },
+                onPressedBlog: () {
+                  _tabBarController.animateTo(4);
+                },
+              ),
+              Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: AppConst.defaultHorizontalPadding),
+                  child: TabBarView(
+                    controller: _tabBarController,
+                    physics: const NeverScrollableScrollPhysics(),
+                    children: _tabBarViews,
                   ),
-                )
-              ],
-            ),
+                ),
+              ),
+            ],
           ),
         ),
       ),

@@ -3,7 +3,6 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:landing/src/features/home_feature/dashboard_page/dashboard_page.dart';
 import 'package:landing/src/features/landing_feature/landing_page/landing_page.dart';
-import 'package:landing/src/shared/utility/app_colors.dart';
 import 'package:landing/src/shared/utility/app_theme_data.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 
@@ -66,6 +65,7 @@ class MyApp extends StatelessWidget {
           themeMode: settingsController.themeMode,
 
           // To make app responsive
+
           builder: (context, widget) => ResponsiveWrapper.builder(
             BouncingScrollWrapper.builder(context, widget!),
             maxWidth: 1200,
@@ -73,17 +73,17 @@ class MyApp extends StatelessWidget {
             defaultScale: true,
             breakpoints: [
               const ResponsiveBreakpoint.resize(450, name: MOBILE),
-              const ResponsiveBreakpoint.autoScale(800, name: MOBILE),
+              // const ResponsiveBreakpoint.autoScale(800, name: MOBILE),
               const ResponsiveBreakpoint.autoScale(800, name: TABLET),
               const ResponsiveBreakpoint.autoScale(1000, name: TABLET),
               const ResponsiveBreakpoint.resize(1200, name: DESKTOP),
               const ResponsiveBreakpoint.autoScale(2460, name: "4K"),
             ],
-            background: Container(
-              color: settingsController.themeMode == ThemeMode.dark
-                  ? AppColors.scaffoldBackgroundDark
-                  : AppColors.scaffoldBackground,
-            ),
+            // background: Container(
+            //   color: settingsController.themeMode == ThemeMode.dark
+            //       ? AppColors.scaffoldBackgroundDark
+            //       : AppColors.scaffoldBackground,
+            // ),
           ),
 
           /*
