@@ -12,6 +12,7 @@ environment:
 
 dependencies:
   bot_toast: ^4.0.3
+  firebase_core: ^2.7.1
   flutter:
     sdk: flutter
   flutter_animate: ^4.1.0
