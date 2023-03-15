@@ -3,6 +3,7 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:landing/src/features/home_feature/dashboard_page/dashboard_page.dart';
 import 'package:landing/src/features/landing_feature/landing_page/landing_page.dart';
+import 'package:landing/src/shared/utility/app_colors.dart';
 import 'package:landing/src/shared/utility/app_theme_data.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 
@@ -31,6 +32,7 @@ class MyApp extends StatelessWidget {
       builder: (BuildContext context, Widget? child) {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
+          title: 'BEYOBOX',
           // Providing a restorationScopeId allows the Navigator built by the
           // MaterialApp to restore the navigation stack when a user leaves and
           // returns to the app after it has been killed while running in the
@@ -55,7 +57,8 @@ class MyApp extends StatelessWidget {
           //
           // The appTitle is defined in .arb files found in the localization
           // directory.
-          onGenerateTitle: (BuildContext context) => AppLocalizations.of(context)!.appTitle,
+          onGenerateTitle: (BuildContext context) =>
+              AppLocalizations.of(context)!.appTitle,
 
           // Define a light and dark color theme. Then, read the user's
           // preferred ThemeMode (light, dark, or system default) from the
@@ -79,11 +82,11 @@ class MyApp extends StatelessWidget {
               const ResponsiveBreakpoint.resize(1200, name: DESKTOP),
               const ResponsiveBreakpoint.autoScale(2460, name: "4K"),
             ],
-            // background: Container(
-            //   color: settingsController.themeMode == ThemeMode.dark
-            //       ? AppColors.scaffoldBackgroundDark
-            //       : AppColors.scaffoldBackground,
-            // ),
+            background: Container(
+              color: settingsController.themeMode == ThemeMode.dark
+                  ? AppColors.scaffoldBackgroundDark
+                  : AppColors.scaffoldBackground,
+            ),
           ),
 
           /*
