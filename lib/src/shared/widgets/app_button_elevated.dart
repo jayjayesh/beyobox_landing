@@ -68,9 +68,9 @@ class AppButtonElevated extends StatelessWidget {
             borderRadius: borderRadius ?? BorderRadius.circular(cornerRadius),
             boxShadow: [
               if (showShadow)
-                const BoxShadow(
-                  color: AppColors.buttonGradient2,
-                  offset: Offset(0, 2),
+                BoxShadow(
+                  color: fillColor ?? AppColors.buttonGradient2,
+                  offset: const Offset(0, 2),
                   blurRadius: 1,
                 ),
             ],
