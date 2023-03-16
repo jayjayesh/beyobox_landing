@@ -1,4 +1,4 @@
-class AppStrings {
+class OLDAppStrings {
   ///
   ///
   static const String socketExceptionErrorText =

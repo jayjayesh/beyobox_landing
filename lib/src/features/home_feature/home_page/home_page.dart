@@ -1,8 +1,10 @@
+import 'package:beyobox/src/features/home_feature/home_page/widgets/home_card_widget.dart';
+import 'package:beyobox/src/shared/widgets/app_image_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:beyobox/src/shared/utility/app_extensions.dart';
 import 'package:beyobox/src/shared/utility/app_scaffold_wraper.dart';
-import 'package:beyobox/src/shared/utility/app_strings.dart';
 import 'package:responsive_framework/responsive_framework.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -29,10 +31,10 @@ class HomePage extends StatelessWidget {
                   children: [
                     ResponsiveRowColumnItem(
                       child: Padding(
-                        padding: const EdgeInsets.all(10.0),
+                        padding: const EdgeInsets.only(bottom: 20.0),
                         child: Text.rich(
                           TextSpan(
-                            text: AppStrings.homePageTextHeading,
+                            text: AppLocalizations.of(context)!.homePageTextHeading,
                             style: Theme.of(context).textTheme.displaySmall?.copyWith(
                                   fontSize: ResponsiveValue(
                                     context,
@@ -50,6 +52,7 @@ class HomePage extends StatelessWidget {
                                   ).value,
                                 ),
                           ),
+                          maxLines: 4,
                         ),
                       ),
                     ),
@@ -57,40 +60,45 @@ class HomePage extends StatelessWidget {
                       child: SizedBox(
                         width: 300,
                         height: 300,
-                        child: Placeholder(),
+                        child: AppImageWidget(
+                          imageUrl: '',
+                        ),
                       ),
                     ),
                   ],
                 ),
-                30.verticalSpace(),
                 ResponsiveRowColumn(
                   layout: ResponsiveWrapper.of(context).isSmallerThan(DESKTOP)
                       ? ResponsiveRowColumnType.COLUMN
                       : ResponsiveRowColumnType.ROW,
                   rowMainAxisAlignment: MainAxisAlignment.spaceBetween,
                   columnMainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: const [
+                  children: [
                     ResponsiveRowColumnItem(
-                      child: SizedBox(
-                        width: 300,
-                        height: 400,
-                        child: Placeholder(),
+                      child: HomeCardWidget(
+                        padding: const EdgeInsets.only(top: 20),
+                        title: AppLocalizations.of(context)!.homePageCard1Heading,
+                        description: AppLocalizations.of(context)!.homePageCard1Description,
+                        imageUrl: '',
+                        onPresssMoreButton: () {},
                       ),
                     ),
-                    ResponsiveRowColumnItem(child: SizedBox(height: 20, width: 20)),
                     ResponsiveRowColumnItem(
-                      child: SizedBox(
-                        width: 300,
-                        height: 400,
-                        child: Placeholder(),
+                      child: HomeCardWidget(
+                        padding: const EdgeInsets.only(top: 20),
+                        title: AppLocalizations.of(context)!.homePageCard1Heading,
+                        description: AppLocalizations.of(context)!.homePageCard1Description,
+                        imageUrl: '',
+                        onPresssMoreButton: () {},
                       ),
                     ),
-                    ResponsiveRowColumnItem(child: SizedBox(height: 20, width: 20)),
                     ResponsiveRowColumnItem(
-                      child: SizedBox(
-                        width: 300,
-                        height: 400,
-                        child: Placeholder(),
+                      child: HomeCardWidget(
+                        padding: const EdgeInsets.only(top: 20),
+                        title: AppLocalizations.of(context)!.homePageCard1Heading,
+                        description: AppLocalizations.of(context)!.homePageCard1Description,
+                        imageUrl: '',
+                        onPresssMoreButton: () {},
                       ),
                     ),
                   ],

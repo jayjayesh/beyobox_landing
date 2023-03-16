@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:beyobox/src/shared/utility/app_colors.dart';
 import 'package:beyobox/src/shared/utility/app_const.dart';
 import 'package:beyobox/src/shared/utility/app_enums.dart';
-import 'package:beyobox/src/shared/utility/app_strings.dart';
 import 'package:beyobox/src/shared/widgets/app_button_elevated.dart';
 import 'package:responsive_framework/responsive_framework.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class DashboardHeaderWidget extends StatefulWidget {
   const DashboardHeaderWidget({
@@ -45,7 +45,7 @@ class _DashboardHeaderWidgetState extends State<DashboardHeaderWidget> {
                 Condition.largerThan(name: MOBILE),
               ],
               child: Text(
-                AppStrings.dashboardBeyoBoxSolution,
+                AppLocalizations.of(context)!.dashboardBeyoBoxSolution,
                 style: Theme.of(context).textTheme.displaySmall,
               ),
             ),
@@ -72,7 +72,7 @@ class _DashboardHeaderWidgetState extends State<DashboardHeaderWidget> {
           padding: const EdgeInsets.all(8.0),
           alignment: Alignment.center,
           child: Text(
-            AppStrings.dashboardButtonTextHome,
+            AppLocalizations.of(context)!.dashboardButtonTextHome,
             style: Theme.of(context).textTheme.titleLarge,
           ),
         ),
@@ -81,7 +81,7 @@ class _DashboardHeaderWidgetState extends State<DashboardHeaderWidget> {
           padding: const EdgeInsets.all(8.0),
           alignment: Alignment.center,
           child: Text(
-            AppStrings.dashboardButtonTextService,
+            AppLocalizations.of(context)!.dashboardButtonTextService,
             style: Theme.of(context).textTheme.titleLarge,
           ),
         ),
@@ -90,7 +90,7 @@ class _DashboardHeaderWidgetState extends State<DashboardHeaderWidget> {
           padding: const EdgeInsets.all(8.0),
           alignment: Alignment.center,
           child: Text(
-            AppStrings.dashboardButtonTextProjects,
+            AppLocalizations.of(context)!.dashboardButtonTextProjects,
             style: Theme.of(context).textTheme.titleLarge,
           ),
         ),
@@ -99,7 +99,7 @@ class _DashboardHeaderWidgetState extends State<DashboardHeaderWidget> {
           padding: const EdgeInsets.all(8.0),
           alignment: Alignment.center,
           child: Text(
-            AppStrings.dashboardButtonTextClients,
+            AppLocalizations.of(context)!.dashboardButtonTextClients,
             style: Theme.of(context).textTheme.titleLarge,
           ),
         ),
@@ -108,7 +108,7 @@ class _DashboardHeaderWidgetState extends State<DashboardHeaderWidget> {
           padding: const EdgeInsets.all(8.0),
           alignment: Alignment.center,
           child: Text(
-            AppStrings.dashboardButtonTextBlog,
+            AppLocalizations.of(context)!.dashboardButtonTextBlog,
             style: Theme.of(context).textTheme.titleLarge,
           ),
         ),
@@ -123,7 +123,7 @@ class _DashboardHeaderWidgetState extends State<DashboardHeaderWidget> {
       // alignment: WrapAlignment.end,
       children: [
         AppButtonElevated(
-          text: AppStrings.dashboardButtonTextHome,
+          text: AppLocalizations.of(context)!.dashboardButtonTextHome,
           fillColor: _selectedTab == DashboardTab.home ? AppColors.primary : AppColors.buttonGray,
           showShadow: _selectedTab == DashboardTab.home ? true : false,
           onPressed: () {
@@ -134,7 +134,7 @@ class _DashboardHeaderWidgetState extends State<DashboardHeaderWidget> {
           },
         ),
         AppButtonElevated(
-          text: AppStrings.dashboardButtonTextService,
+          text: AppLocalizations.of(context)!.dashboardButtonTextService,
           fillColor: _selectedTab == DashboardTab.services ? AppColors.primary : AppColors.buttonGray,
           showShadow: _selectedTab == DashboardTab.services ? true : false,
           onPressed: () {
@@ -145,7 +145,7 @@ class _DashboardHeaderWidgetState extends State<DashboardHeaderWidget> {
           },
         ),
         AppButtonElevated(
-          text: AppStrings.dashboardButtonTextProjects,
+          text: AppLocalizations.of(context)!.dashboardButtonTextProjects,
           fillColor: _selectedTab == DashboardTab.projects ? AppColors.primary : AppColors.buttonGray,
           showShadow: _selectedTab == DashboardTab.projects ? true : false,
           onPressed: () {
@@ -156,7 +156,7 @@ class _DashboardHeaderWidgetState extends State<DashboardHeaderWidget> {
           },
         ),
         AppButtonElevated(
-          text: AppStrings.dashboardButtonTextClients,
+          text: AppLocalizations.of(context)!.dashboardButtonTextClients,
           fillColor: _selectedTab == DashboardTab.clients ? AppColors.primary : AppColors.buttonGray,
           showShadow: _selectedTab == DashboardTab.clients ? true : false,
           onPressed: () {
@@ -167,7 +167,7 @@ class _DashboardHeaderWidgetState extends State<DashboardHeaderWidget> {
           },
         ),
         AppButtonElevated(
-          text: AppStrings.dashboardButtonTextBlog,
+          text: AppLocalizations.of(context)!.dashboardButtonTextBlog,
           fillColor: _selectedTab == DashboardTab.blogs ? AppColors.primary : AppColors.buttonGray,
           showShadow: _selectedTab == DashboardTab.blogs ? true : false,
           onPressed: () {

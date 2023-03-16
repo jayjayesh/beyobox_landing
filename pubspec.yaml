@@ -11,14 +11,18 @@ environment:
   flutter: 3.7.6
 
 dependencies:
+  awesome_extensions: ^2.0.5
   bot_toast: ^4.0.3
+  cached_network_image: ^3.2.3
   flutter:
     sdk: flutter
   flutter_animate: ^4.1.0
   flutter_localizations:
     sdk: flutter
+  flutter_svg: ^2.0.4
   get: ^4.6.5
   google_fonts: ^4.0.3
+  lottie: ^2.3.0
   responsive_framework: ^0.2.0
 
 dev_dependencies:
@@ -26,6 +30,13 @@ dev_dependencies:
     sdk: flutter
 
   flutter_lints: ^2.0.1
+
+scripts:
+  build:
+  - fvm flutter clean
+  - fvm flutter pub get
+  - fvm flutter build web
+  - firebase deploy --only hosting
 
 flutter:
   uses-material-design: true
@@ -36,3 +47,5 @@ flutter:
   assets:
     # Add assets from the images directory to the application.
     - assets/images/
+
+

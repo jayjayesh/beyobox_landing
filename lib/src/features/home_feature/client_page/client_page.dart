@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:beyobox/src/shared/utility/app_const.dart';
 import 'package:beyobox/src/shared/utility/app_extensions.dart';
 import 'package:beyobox/src/shared/utility/app_scaffold_wraper.dart';
-import 'package:beyobox/src/shared/utility/app_strings.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class ClientPage extends StatelessWidget {
   const ClientPage({super.key});
@@ -21,13 +21,13 @@ class ClientPage extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: AppConst.defaultHorizontalPadding),
                 child: Text(
-                  AppStrings.clientPageHeading,
+                  AppLocalizations.of(context)!.clientPageHeading,
                   style: Theme.of(context).textTheme.displaySmall,
                 ),
               ),
               RichText(
                 text: TextSpan(
-                  text: AppStrings.clientPageSubHeading,
+                  text: AppLocalizations.of(context)!.clientPageSubHeading,
                   style: Theme.of(context).textTheme.bodyLarge,
                 ),
               ),

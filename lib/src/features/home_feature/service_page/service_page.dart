@@ -1,9 +1,10 @@
+import 'package:beyobox/src/features/home_feature/service_page/widgets/service_item_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:beyobox/src/shared/utility/app_const.dart';
 import 'package:beyobox/src/shared/utility/app_extensions.dart';
 import 'package:beyobox/src/shared/utility/app_scaffold_wraper.dart';
-import 'package:beyobox/src/shared/utility/app_strings.dart';
 import 'package:responsive_framework/responsive_framework.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class ServicePage extends StatelessWidget {
   const ServicePage({super.key});
@@ -20,14 +21,15 @@ class ServicePage extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Padding(
-                  padding: const EdgeInsets.all(AppConst.defaultHorizontalPadding),
-                  // padding: const EdgeInsets.symmetric(vertical: 20.0),
+                  // padding: const EdgeInsets.all(AppConst.defaultHorizontalPadding),
+                  padding: const EdgeInsets.symmetric(vertical: AppConst.defaultHorizontalPadding),
                   child: Text(
-                    AppStrings.servicePageHeading,
+                    AppLocalizations.of(context)!.servicePageHeading,
                     style: Theme.of(context).textTheme.displaySmall,
                   ),
                 ),
                 GridView(
+                  padding: const EdgeInsets.only(bottom: 200),
                   shrinkWrap: true,
                   physics: const NeverScrollableScrollPhysics(),
                   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
@@ -48,61 +50,29 @@ class ServicePage extends StatelessWidget {
                     mainAxisSpacing: 30,
                     crossAxisSpacing: 30,
                   ),
-                  children: const [
-                    SizedBox(
-                      width: 430,
-                      height: 400,
-                      child: Placeholder(),
+                  children: [
+                    ServiceItemWidget(
+                      imageUrl: '',
+                      title: AppLocalizations.of(context)!.servicePageService1Title,
+                      description: AppLocalizations.of(context)!.servicePageService1Desc,
                     ),
-                    SizedBox(
-                      width: 430,
-                      height: 400,
-                      child: Placeholder(),
+                    ServiceItemWidget(
+                      imageUrl: '',
+                      title: AppLocalizations.of(context)!.servicePageService2Title,
+                      description: AppLocalizations.of(context)!.servicePageService2Desc,
                     ),
-                    SizedBox(
-                      width: 430,
-                      height: 400,
-                      child: Placeholder(),
+                    ServiceItemWidget(
+                      imageUrl: '',
+                      title: AppLocalizations.of(context)!.servicePageService3Title,
+                      description: AppLocalizations.of(context)!.servicePageService3Desc,
                     ),
-                    SizedBox(
-                      width: 430,
-                      height: 400,
-                      child: Placeholder(),
+                    ServiceItemWidget(
+                      imageUrl: '',
+                      title: AppLocalizations.of(context)!.servicePageService4Title,
+                      description: AppLocalizations.of(context)!.servicePageService4Desc,
                     ),
                   ],
                 ),
-                /*
-                Center(
-                  child: Wrap(
-                    spacing: 30,
-                    runSpacing: 30,
-                    alignment: WrapAlignment.spaceAround,
-                    children: const [
-                      SizedBox(
-                        width: 430,
-                        height: 400,
-                        child: Placeholder(),
-                      ),
-                      SizedBox(
-                        width: 430,
-                        height: 400,
-                        child: Placeholder(),
-                      ),
-                      SizedBox(
-                        width: 430,
-                        height: 400,
-                        child: Placeholder(),
-                      ),
-                      SizedBox(
-                        width: 430,
-                        height: 400,
-                        child: Placeholder(),
-                      ),
-                    ],
-                  ),
-                ),
-                */
-                200.verticalSpace(),
               ],
             ),
           ),

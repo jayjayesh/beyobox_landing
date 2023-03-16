@@ -2,5 +2,103 @@
   "appTitle": "beyobox",
   "@appTitle": {
     "description": "The title of the application"
-  }
+  },
+ 
+
+
+  "allGeneralString": "========== AllGeneralString =========",
+
+  "socketExceptionErrorText" :
+  "We're sorry, there was a problem connecting to the server. Please try again later.",
+"noInternetText" : "No Internet connection",
+"noInternetSubText" : "Please check your internet connection or try again later.",
+"noInternetButtonText" : "Refresh",
+"noServiceProvidersFound" : "Retry",
+"noServiceProvidersFoundText" : "No pet service providers found for your search criteria.",
+"commonErrorMsg" : "Something went wrong, Try again later!",
+"internalServerErrorMsg" : "Couldn't find",
+"badResponseErrorMsg" : "Bad response format",
+"unauthenticatedErrorMsg" : "Unauthenticated user",
+"noResultFoundErrorMsg" : "No result found",
+"requestConflictErrorMsg" : "Request no longer available, Try again later!",
+"thisFeatureComingSoonMsg" : "This feature is coming soon!",
+"noMoreOldMessagesAvailableChatBubbleMsg" : "No more old messages available",
+"hiChatBubbleMsg" : "hi",
+"welcomeChatBubbleMsg" : "welcome",
+"thisMessageWasDeletedChatBubbleMsg" : "This message was deleted",
+"toastMessageToSubsribePaidClub" :
+  "This is invite-only club. We have taken your request for subscription. We will invite you to join once next subscription slot opens.",
+
+  "generalDialogButtonString": "========== AllGeneralDialogButtonString =========",
+  "buttonTextYes" : "Yes",
+  "buttonTextNo" : "No",
+  "buttonTextOK" : "OK",
+  "buttonTextCancel" : "Cancel",
+
+  "emptyStateStrings": "========== empty state Strings =========",
+  "appEmptyStateMsg" : "There is nothing here",
+
+  "dashboardPageStrings": "========== Dashboard Page Strings =========",
+   "dashboardBeyoBoxSolution" : "BEYOBOX SOLUTION",
+   "dashboardButtonTextHome" : "Home",
+   "dashboardButtonTextService" : "Service",
+   "dashboardButtonTextProjects" : "Projects",
+   "dashboardButtonTextClients" : "Clients",
+   "dashboardButtonTextBlog" : "Blog",
+
+  
+  "homePageString": "========== Home Page String =========",
+  "homePageTextHeading" : "TOGETHER WE REACH THE GOAL",
+  "homePageCardButtonTextService" : "MORE",
+  "homePageCard1Heading" : "OUR SUCCESS",
+  "homePageCard2Heading" : "OUR TEAM",
+  "homePageCard3Heading" : "OUR SOLUTIONS",
+  "homePageCard1Description" :
+      "Your success. I'm a Paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me and you can start adding your own content and make changes to the font. \nFeel free to drag and drop me anywhere you like on your page. I’m a great place for you to write more. Tell a story and let your users get to know you.​",
+  "homePageCard2Description" :
+      "Meet our team. I'm a Paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me and you can start adding your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. \nI’m a great place for you to write more. Tell a story and let your users get to know you.​​Click here to add your own text and edit me.",
+  "homePageCard3Description" :
+      "Solutions. I'm a Paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me and you can start adding your own content and make changes to the font. \nFeel free to drag and drop me anywhere you like on your page. I’m a great place for you to write more. Tell a story and let your users get to know you.​",
+  "homeCardWidgetButtonMore": "More",
+ 
+
+  "servicePageString": "========== service Page String =========",
+  "servicePageHeading" : "OUR SERVICES",
+  "servicePageService1Title" : "SERVICES 01",
+  "servicePageService2Title" : "SERVICES 02",
+  "servicePageService3Title" : "SERVICES 03",
+  "servicePageService4Title" : "SERVICES 04",
+  "servicePageService1Desc" :
+  "This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide. Tell your visitors the story of how you came up with the idea for your business and what makes you different from your competitors. Make your company stand out and show your visitors who you are. At Wix we’re passionate about making templates that allow you to build fabulous websites and it’s all thanks to the support and feedback from users like you! Keep up to date with New Releases and what’s Coming Soon in Wixellaneous in Support. Feel free to tell us what you think and give us feedback in the Wix Forum. If you’d like to benefit from a professional designer’s touch, head to the Wix Arena and connect with one of our Wix Pro designers. Or if you need more help you can simply type your questions into the Support Forum and get instant answers. To keep up to date with everything Wix, including tips and things we think are cool, just head to the Wix Blog! I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me and you can start adding your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.",
+  "servicePageService2Desc" :
+  "This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide. Tell your visitors the story of how you came up with the idea for your business and what makes you different from your competitors. Make your company stand out and show your visitors who you are. At Wix we’re passionate about making templates that allow you to build fabulous websites and it’s all thanks to the support and feedback from users like you! Keep up to date with New Releases and what’s Coming Soon in Wixellaneous in Support. Feel free to tell us what you think and give us feedback in the Wix Forum. If you’d like to benefit from a professional designer’s touch, head to the Wix Arena and connect with one of our Wix Pro designers. Or if you need more help you can simply type your questions into the Support Forum and get instant answers. To keep up to date with everything Wix, including tips and things we think are cool, just head to the Wix Blog! I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me and you can start adding your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.",
+  "servicePageService3Desc" :
+  "This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide. Tell your visitors the story of how you came up with the idea for your business and what makes you different from your competitors. Make your company stand out and show your visitors who you are. At Wix we’re passionate about making templates that allow you to build fabulous websites and it’s all thanks to the support and feedback from users like you! Keep up to date with New Releases and what’s Coming Soon in Wixellaneous in Support. Feel free to tell us what you think and give us feedback in the Wix Forum. If you’d like to benefit from a professional designer’s touch, head to the Wix Arena and connect with one of our Wix Pro designers. Or if you need more help you can simply type your questions into the Support Forum and get instant answers. To keep up to date with everything Wix, including tips and things we think are cool, just head to the Wix Blog! I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me and you can start adding your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.",
+  "servicePageService4Desc" :
+  "This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide. Tell your visitors the story of how you came up with the idea for your business and what makes you different from your competitors. Make your company stand out and show your visitors who you are. At Wix we’re passionate about making templates that allow you to build fabulous websites and it’s all thanks to the support and feedback from users like you! Keep up to date with New Releases and what’s Coming Soon in Wixellaneous in Support. Feel free to tell us what you think and give us feedback in the Wix Forum. If you’d like to benefit from a professional designer’s touch, head to the Wix Arena and connect with one of our Wix Pro designers. Or if you need more help you can simply type your questions into the Support Forum and get instant answers. To keep up to date with everything Wix, including tips and things we think are cool, just head to the Wix Blog! I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me and you can start adding your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.",
+
+  
+  "projectPageString": "========== project Page String =========",
+  "projectPageHeading" : "RECENT PROJECTS",
+  "projectPageSubHeading" :
+      "I'm a Paragraph. Click me to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me and you can start adding your own content and make changes to the font.",
+  "projectPageProject1Title" : "PROJECT 01",
+  "projectPageProject2Title" : "PROJECT 02",
+  "projectPageProject1Desc" :
+      "This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide. Tell your visitors the story of how you came up with the idea for your business and what makes you different from your competitors. Make your company stand out and show your visitors who you are. At Wix we’re passionate about making templates that allow you to build fabulous websites and it’s all thanks to the support and feedback from users like you! Keep up to date with New Releases and what’s Coming Soon in Wixellaneous in Support. Feel free to tell us what you think and give us feedback in the Wix Forum. If you’d like to benefit from a professional designer’s touch, head to the Wix Arena and connect with one of our Wix Pro designers. Or if you need more help you can simply type your questions into the Support Forum and get instant answers. To keep up to date with everything Wix, including tips and things we think are cool, just head to the Wix Blog! I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me and you can start adding your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.",
+  "projectPageProject2Desc" :
+      "This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide. Tell your visitors the story of how you came up with the idea for your business and what makes you different from your competitors. Make your company stand out and show your visitors who you are. At Wix we’re passionate about making templates that allow you to build fabulous websites and it’s all thanks to the support and feedback from users like you! Keep up to date with New Releases and what’s Coming Soon in Wixellaneous in Support. Feel free to tell us what you think and give us feedback in the Wix Forum. If you’d like to benefit from a professional designer’s touch, head to the Wix Arena and connect with one of our Wix Pro designers. Or if you need more help you can simply type your questions into the Support Forum and get instant answers. To keep up to date with everything Wix, including tips and things we think are cool, just head to the Wix Blog! I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me and you can start adding your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.",
+
+  
+  "clientPageString": "========== client Page String =========",
+  "clientPageHeading" : "OUR CLIENTS",
+  "clientPageSubHeading" :
+      "I'm a Paragraph. Click me to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me and you can start adding your own content and make changes to the font.",
+  "clientPageStory1Title" : "CLIENT STORY 01",
+  "clientPageStory2Title" : "CLIENT STORY 02",
+  "clientPageStory1Desc" :
+      "This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide. Tell your visitors the story of how you came up with the idea for your business and what makes you different from your competitors. Make your company stand out and show your visitors who you are. At Wix we’re passionate about making templates that allow you to build fabulous websites and it’s all thanks to the support and feedback from users like you! Keep up to date with New Releases and what’s Coming Soon in Wixellaneous in Support. Feel free to tell us what you think and give us feedback in the Wix Forum. If you’d like to benefit from a professional designer’s touch, head to the Wix Arena and connect with one of our Wix Pro designers. Or if you need more help you can simply type your questions into the Support Forum and get instant answers. To keep up to date with everything Wix, including tips and things we think are cool, just head to the Wix Blog! I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me and you can start adding your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.",
+  "clientPageStory2Desc" :
+      "This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide. Tell your visitors the story of how you came up with the idea for your business and what makes you different from your competitors. Make your company stand out and show your visitors who you are. At Wix we’re passionate about making templates that allow you to build fabulous websites and it’s all thanks to the support and feedback from users like you! Keep up to date with New Releases and what’s Coming Soon in Wixellaneous in Support. Feel free to tell us what you think and give us feedback in the Wix Forum. If you’d like to benefit from a professional designer’s touch, head to the Wix Arena and connect with one of our Wix Pro designers. Or if you need more help you can simply type your questions into the Support Forum and get instant answers. To keep up to date with everything Wix, including tips and things we think are cool, just head to the Wix Blog! I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me and you can start adding your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you."
+
 }
