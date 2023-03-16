@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:landing/src/shared/utility/app_const.dart';
-import 'package:landing/src/shared/utility/app_extensions.dart';
-import 'package:landing/src/shared/utility/app_scaffold_wraper.dart';
-import 'package:landing/src/shared/utility/app_strings.dart';
+import 'package:beyobox/src/shared/utility/app_const.dart';
+import 'package:beyobox/src/shared/utility/app_extensions.dart';
+import 'package:beyobox/src/shared/utility/app_scaffold_wraper.dart';
+import 'package:beyobox/src/shared/utility/app_strings.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 
 class ServicePage extends StatelessWidget {

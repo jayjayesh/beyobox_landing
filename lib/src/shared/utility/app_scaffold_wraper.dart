@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:landing/src/shared/utility/app_log.dart';
-import 'package:landing/src/shared/utility/app_utility.dart';
+import 'package:beyobox/src/shared/utility/app_log.dart';
+import 'package:beyobox/src/shared/utility/app_utility.dart';
 
 class AppScaffoldWrapper extends StatefulWidget {
   const AppScaffoldWrapper({

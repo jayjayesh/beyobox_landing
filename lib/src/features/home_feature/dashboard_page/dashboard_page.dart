@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:landing/src/features/home_feature/blog_page/blog_page.dart';
-import 'package:landing/src/features/home_feature/client_page/client_page.dart';
-import 'package:landing/src/features/home_feature/home_page/home_page.dart';
-import 'package:landing/src/features/home_feature/project_page/project_page.dart';
-import 'package:landing/src/features/home_feature/service_page/service_page.dart';
-import 'package:landing/src/shared/utility/app_const.dart';
-import 'package:landing/src/shared/utility/app_extensions.dart';
-import 'package:landing/src/shared/utility/app_scaffold_wraper.dart';
+import 'package:beyobox/src/features/home_feature/blog_page/blog_page.dart';
+import 'package:beyobox/src/features/home_feature/client_page/client_page.dart';
+import 'package:beyobox/src/features/home_feature/home_page/home_page.dart';
+import 'package:beyobox/src/features/home_feature/project_page/project_page.dart';
+import 'package:beyobox/src/features/home_feature/service_page/service_page.dart';
+import 'package:beyobox/src/shared/utility/app_const.dart';
+import 'package:beyobox/src/shared/utility/app_extensions.dart';
+import 'package:beyobox/src/shared/utility/app_scaffold_wraper.dart';
 import 'widgets/dashboard_header_widget.dart';
 
 class DashboardPage extends StatefulWidget {

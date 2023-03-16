@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:landing/src/features/home_feature/dashboard_page/dashboard_page.dart';
-import 'package:landing/src/features/landing_feature/landing_page/landing_page.dart';
-import 'package:landing/src/shared/utility/app_theme_data.dart';
+import 'package:beyobox/src/features/home_feature/dashboard_page/dashboard_page.dart';
+import 'package:beyobox/src/features/landing_feature/landing_page/landing_page.dart';
+import 'package:beyobox/src/shared/utility/app_theme_data.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 
 import 'features/sample_feature/sample_item_details_view.dart';

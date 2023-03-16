@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:landing/src/features/home_feature/dashboard_page/dashboard_page.dart';
+import 'package:beyobox/src/features/home_feature/dashboard_page/dashboard_page.dart';
 
 class LandingPage extends StatefulWidget {
   const LandingPage({super.key});
