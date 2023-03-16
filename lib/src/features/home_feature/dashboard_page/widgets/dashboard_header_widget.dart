@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:landing/src/shared/utility/app_colors.dart';
-import 'package:landing/src/shared/utility/app_const.dart';
-import 'package:landing/src/shared/utility/app_enums.dart';
-import 'package:landing/src/shared/utility/app_strings.dart';
-import 'package:landing/src/shared/widgets/app_button_elevated.dart';
+import 'package:beyobox/src/shared/utility/app_colors.dart';
+import 'package:beyobox/src/shared/utility/app_const.dart';
+import 'package:beyobox/src/shared/utility/app_enums.dart';
+import 'package:beyobox/src/shared/utility/app_strings.dart';
+import 'package:beyobox/src/shared/widgets/app_button_elevated.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 
 class DashboardHeaderWidget extends StatefulWidget {
@@ -33,36 +33,30 @@ class _DashboardHeaderWidgetState extends State<DashboardHeaderWidget> {
   final tabItemWidth = 100.0;
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.all(AppConst.defaultHorizontalPadding),
-      clipBehavior: Clip.hardEdge,
-      decoration: BoxDecoration(
-        // color: AppColors.scaffoldBackgroundDark,
-        color: Colors.amber,
-        borderRadius: BorderRadius.circular(
-          AppConst.defaultCornerRedious,
+    return Card(
+      child: Padding(
+        padding: const EdgeInsets.all(AppConst.defaultHorizontalPadding),
+        child: Row(
+          // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            ResponsiveVisibility(
+              visible: false,
+              visibleWhen: const [
+                Condition.largerThan(name: MOBILE),
+              ],
+              child: Text(
+                AppStrings.dashboardBeyoBoxSolution,
+                style: Theme.of(context).textTheme.displaySmall,
+              ),
+            ),
+            Expanded(
+              child: Center(
+                child: _buildTabWrapper(),
+                // child: _buildTabBar(),
+              ),
+            ),
+          ],
         ),
-      ),
-      child: Row(
-        // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          ResponsiveVisibility(
-            visible: false,
-            visibleWhen: const [
-              Condition.largerThan(name: MOBILE),
-            ],
-            child: Text(
-              AppStrings.dashboardBeyoBoxSolution,
-              style: Theme.of(context).textTheme.displaySmall,
-            ),
-          ),
-          Expanded(
-            child: Center(
-              child: _buildTabWrapper(),
-              // child: _buildTabBar(),
-            ),
-          ),
-        ],
       ),
     );
   }
