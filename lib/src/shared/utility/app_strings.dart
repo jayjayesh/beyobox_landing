@@ -42,7 +42,7 @@ class AppStrings {
   static const String errorText = 'Error';
 
   ///-------- Dashboard -----------
-  static const String dashboardBeyoBoxSolution = 'BOX SOLUTION';
+  static const String dashboardBeyoBoxSolution = 'BEYOBOX SOLUTION';
   static const String dashboardButtonTextHome = 'Home';
   static const String dashboardButtonTextService = 'Service';
   static const String dashboardButtonTextProjects = 'Projects';
