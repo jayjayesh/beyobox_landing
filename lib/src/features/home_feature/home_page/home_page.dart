@@ -1,7 +1,7 @@
+import 'package:awesome_extensions/awesome_extensions.dart';
 import 'package:beyobox/src/features/home_feature/home_page/widgets/home_card_widget.dart';
 import 'package:beyobox/src/shared/widgets/app_image_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:beyobox/src/shared/utility/app_extensions.dart';
 import 'package:beyobox/src/shared/utility/app_scaffold_wraper.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
@@ -86,8 +86,8 @@ class HomePage extends StatelessWidget {
                     ResponsiveRowColumnItem(
                       child: HomeCardWidget(
                         padding: const EdgeInsets.only(top: 20),
-                        title: AppLocalizations.of(context)!.homePageCard1Heading,
-                        description: AppLocalizations.of(context)!.homePageCard1Description,
+                        title: AppLocalizations.of(context)!.homePageCard2Heading,
+                        description: AppLocalizations.of(context)!.homePageCard2Description,
                         imageUrl: '',
                         onPresssMoreButton: () {},
                       ),
@@ -95,15 +95,15 @@ class HomePage extends StatelessWidget {
                     ResponsiveRowColumnItem(
                       child: HomeCardWidget(
                         padding: const EdgeInsets.only(top: 20),
-                        title: AppLocalizations.of(context)!.homePageCard1Heading,
-                        description: AppLocalizations.of(context)!.homePageCard1Description,
+                        title: AppLocalizations.of(context)!.homePageCard3Heading,
+                        description: AppLocalizations.of(context)!.homePageCard3Description,
                         imageUrl: '',
                         onPresssMoreButton: () {},
                       ),
                     ),
                   ],
                 ),
-                200.verticalSpace(),
+                200.heightBox,
               ],
             ),
           ),

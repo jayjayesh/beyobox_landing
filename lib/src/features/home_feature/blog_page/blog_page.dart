@@ -1,8 +1,10 @@
+import 'package:beyobox/src/features/home_feature/blog_page/widgets/blog_item_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:beyobox/src/shared/utility/app_const.dart';
 import 'package:beyobox/src/shared/utility/app_extensions.dart';
 import 'package:beyobox/src/shared/utility/app_scaffold_wraper.dart';
 import 'package:responsive_framework/responsive_framework.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class BlogPage extends StatelessWidget {
   const BlogPage({super.key});
@@ -36,51 +38,76 @@ class BlogPage extends StatelessWidget {
             mainAxisSpacing: 30,
             crossAxisSpacing: 30,
           ),
-          children: const [
-            SizedBox(
-              width: 430,
-              height: 400,
-              child: Placeholder(),
+          children: [
+            BlogItemWidget(
+              imageUrl: '',
+              title: AppLocalizations.of(context)!.blogCardWidget1Title,
+              description: AppLocalizations.of(context)!.blogCardWidget1Desc,
+              date: AppLocalizations.of(context)!.blogCardWidget1date,
+              onPresssReadMoreButton: () {},
             ),
-            SizedBox(
-              width: 430,
-              height: 400,
-              child: Placeholder(),
+            BlogItemWidget(
+              imageUrl: '',
+              title: AppLocalizations.of(context)!.blogCardWidget2Title,
+              description: AppLocalizations.of(context)!.blogCardWidget2Desc,
+              date: AppLocalizations.of(context)!.blogCardWidget2date,
+              onPresssReadMoreButton: () {},
             ),
-            SizedBox(
-              width: 430,
-              height: 400,
-              child: Placeholder(),
+            BlogItemWidget(
+              imageUrl: '',
+              title: AppLocalizations.of(context)!.blogCardWidget3Title,
+              description: AppLocalizations.of(context)!.blogCardWidget3Desc,
+              date: AppLocalizations.of(context)!.blogCardWidget3date,
+              onPresssReadMoreButton: () {},
             ),
-            SizedBox(
-              width: 430,
-              height: 400,
-              child: Placeholder(),
+            BlogItemWidget(
+              imageUrl: '',
+              title: AppLocalizations.of(context)!.blogCardWidget4Title,
+              description: AppLocalizations.of(context)!.blogCardWidget4Desc,
+              date: AppLocalizations.of(context)!.blogCardWidget4date,
+              onPresssReadMoreButton: () {},
             ),
-            SizedBox(
-              width: 430,
-              height: 400,
-              child: Placeholder(),
+            BlogItemWidget(
+              imageUrl: '',
+              title: AppLocalizations.of(context)!.blogCardWidget5Title,
+              description: AppLocalizations.of(context)!.blogCardWidget5Desc,
+              date: AppLocalizations.of(context)!.blogCardWidget5date,
+              onPresssReadMoreButton: () {},
             ),
-            SizedBox(
-              width: 430,
-              height: 400,
-              child: Placeholder(),
+            BlogItemWidget(
+              imageUrl: '',
+              title: AppLocalizations.of(context)!.blogCardWidget6Title,
+              description: AppLocalizations.of(context)!.blogCardWidget6Desc,
+              date: AppLocalizations.of(context)!.blogCardWidget6date,
+              onPresssReadMoreButton: () {},
             ),
-            SizedBox(
-              width: 430,
-              height: 400,
-              child: Placeholder(),
+            BlogItemWidget(
+              imageUrl: '',
+              title: AppLocalizations.of(context)!.blogCardWidget7Title,
+              description: AppLocalizations.of(context)!.blogCardWidget7Desc,
+              date: AppLocalizations.of(context)!.blogCardWidget7date,
+              onPresssReadMoreButton: () {},
             ),
-            SizedBox(
-              width: 430,
-              height: 400,
-              child: Placeholder(),
+            BlogItemWidget(
+              imageUrl: '',
+              title: AppLocalizations.of(context)!.blogCardWidget8Title,
+              description: AppLocalizations.of(context)!.blogCardWidget8Desc,
+              date: AppLocalizations.of(context)!.blogCardWidget8date,
+              onPresssReadMoreButton: () {},
             ),
-            SizedBox(
-              width: 430,
-              height: 400,
-              child: Placeholder(),
+            BlogItemWidget(
+              imageUrl: '',
+              title: AppLocalizations.of(context)!.blogCardWidget9Title,
+              description: AppLocalizations.of(context)!.blogCardWidget9Desc,
+              date: AppLocalizations.of(context)!.blogCardWidget9date,
+              onPresssReadMoreButton: () {},
+            ),
+            BlogItemWidget(
+              imageUrl: '',
+              title: AppLocalizations.of(context)!.blogCardWidget10Title,
+              description: AppLocalizations.of(context)!.blogCardWidget10Desc,
+              date: AppLocalizations.of(context)!.blogCardWidget10date,
+              onPresssReadMoreButton: () {},
             ),
           ],
         ),

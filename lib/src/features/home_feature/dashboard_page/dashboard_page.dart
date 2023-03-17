@@ -1,3 +1,4 @@
+import 'package:awesome_extensions/awesome_extensions.dart';
 import 'package:flutter/material.dart';
 import 'package:beyobox/src/features/home_feature/blog_page/blog_page.dart';
 import 'package:beyobox/src/features/home_feature/client_page/client_page.dart';
@@ -5,7 +6,6 @@ import 'package:beyobox/src/features/home_feature/home_page/home_page.dart';
 import 'package:beyobox/src/features/home_feature/project_page/project_page.dart';
 import 'package:beyobox/src/features/home_feature/service_page/service_page.dart';
 import 'package:beyobox/src/shared/utility/app_const.dart';
-import 'package:beyobox/src/shared/utility/app_extensions.dart';
 import 'package:beyobox/src/shared/utility/app_scaffold_wraper.dart';
 import 'widgets/dashboard_header_widget.dart';
 
@@ -42,7 +42,7 @@ class _LandingPageState extends State<DashboardPage> with TickerProviderStateMix
           padding: const EdgeInsets.symmetric(horizontal: AppConst.defaultHorizontalPadding),
           child: Column(
             children: [
-              20.verticalSpace(),
+              20.heightBox,
               DashboardHeaderWidget(
                 tabBarController: _tabBarController,
                 onPressedHome: () {

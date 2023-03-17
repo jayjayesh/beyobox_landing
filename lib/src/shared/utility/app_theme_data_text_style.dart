@@ -2,6 +2,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/material.dart';
 import 'app_colors.dart';
 
+// Referance : https://api.flutter.dev/flutter/material/TextTheme-class.html?utm_source=pocket_saves
 // overLine - 10
 // caption  = 12
 // bodyText = 14, 16
@@ -18,11 +19,11 @@ TextTheme myBaseTextTheme = TextTheme(
   headlineSmall: myHeadline5,
   titleMedium: mySubtitle1,
   titleSmall: mySubtitle2,
+  labelLarge: myButton,
+  labelSmall: myOverline,
   bodyLarge: myBodytext1,
   bodyMedium: myBodytext2,
   bodySmall: myCaption,
-  labelLarge: myButton,
-  labelSmall: myOverline,
 );
 
 TextTheme myBaseTextThemeDark = TextTheme(
@@ -33,11 +34,11 @@ TextTheme myBaseTextThemeDark = TextTheme(
   headlineSmall: myHeadline5.copyWith(color: AppColors.textWhite),
   titleMedium: mySubtitle1.copyWith(color: AppColors.textWhite),
   titleSmall: mySubtitle2.copyWith(color: AppColors.textWhite),
+  labelSmall: myOverline.copyWith(color: AppColors.textWhite),
+  labelLarge: myButton.copyWith(color: AppColors.textWhite),
   bodyLarge: myBodytext1.copyWith(color: AppColors.textWhite),
   bodyMedium: myBodytext2.copyWith(color: AppColors.textWhite),
   bodySmall: myCaption.copyWith(color: AppColors.textWhite.withOpacity(0.6)),
-  labelSmall: myOverline.copyWith(color: AppColors.textWhite),
-  labelLarge: myButton.copyWith(color: AppColors.textWhite),
 );
 
 //-----------------------------------

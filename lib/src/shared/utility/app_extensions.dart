@@ -66,30 +66,6 @@ extension NumExtensions on num {
   bool get isInt => (this % 1) == 0;
 }
 
-extension IntExtention on int {
-  Widget verticalSpace() {
-    if (this == 0) {
-      return const SizedBox.shrink();
-    }
-    return SizedBox(
-      height: this * 1.0,
-    );
-  }
-
-  Widget horizontalSpace() {
-    if (this == 0) {
-      return const SizedBox.shrink();
-    }
-    return SizedBox(
-      width: this * 1.0,
-    );
-  }
-
-  // how much digit you want as int
-  // to turn (1) into (01)
-  // int toPrecision(int n) => '$this'.padLeft(n, '0').toInt();
-}
-
 /// Define an extension:
 extension DoubleExtention on double {
   // how much digit you want after decimal point

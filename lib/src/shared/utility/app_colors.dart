@@ -5,7 +5,7 @@ class AppColors {
   // you don't want AppRegex to ever be accidentally instantiated by constructor
   AppColors._();
   static const Color transparent = Colors.transparent;
-  static const Color primary = Color.fromARGB(255, 30, 120, 180);
+  static const Color primary = Color.fromARGB(255, 12, 60, 95);
   static const Color primaryDark = Color(0xFF020015);
   static const Color secondry = primary;
   static const Color secondryDark = Color(0xFF020015);
