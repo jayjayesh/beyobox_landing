@@ -1,7 +1,7 @@
 import 'dart:io';
 
 import 'package:awesome_extensions/awesome_extensions.dart';
-import 'package:beyobox/src/shared/utility/app_assets.dart';
+import 'package:beyobox/gen/assets.gen.dart';
 import 'package:beyobox/src/shared/utility/app_extensions.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/foundation.dart';
@@ -90,7 +90,8 @@ class AppImageWidget extends StatelessWidget {
     ///
     if (imageUrl.isEmpty) {
       return Image.asset(
-        AppAssets.placeholderImage,
+        Assets.images.flutterLogo.path,
+        // AppAssets.placeholderImage,
         fit: fit,
         width: width,
         height: height,
@@ -318,7 +319,7 @@ class AppImageWidget extends StatelessWidget {
                   // ),
                   // errorWidget: (context, url, error) => const Icon(Icons.error),
                   errorWidget: (context, url, dynamic error) => Image.asset(
-                    AppAssets.placeholderImage,
+                    Assets.images.placeholderImage.path,
                     fit: fit,
                     width: width,
                     height: height,
@@ -360,7 +361,7 @@ class AppImageWidget extends StatelessWidget {
           cacheHeight: cacheHeight,
           fit: fit,
           errorBuilder: (context, url, error) => Image.asset(
-            AppAssets.placeholderImage,
+            Assets.images.placeholderImage.path,
             width: width,
             height: isRounded ? width : height,
             cacheHeight: cacheHeight,

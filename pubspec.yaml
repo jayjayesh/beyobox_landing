@@ -30,6 +30,8 @@ dev_dependencies:
     sdk: flutter
 
   flutter_lints: ^2.0.1
+  build_runner: ^2.3.3
+  flutter_gen_runner: ^5.2.0
 
 scripts:
   build:
@@ -37,6 +39,18 @@ scripts:
   - fvm flutter pub get
   - fvm flutter build web
   - firebase deploy --only hosting
+
+flutter_gen:
+  output: lib/gen/ # Optional (default: lib/gen/)
+  line_length: 80 # Optional (default: 80)
+
+  # Optional
+  integrations:
+    flutter_svg: true
+    flare_flutter: false
+    rive: false
+    lottie: false
+
 
 flutter:
   uses-material-design: true

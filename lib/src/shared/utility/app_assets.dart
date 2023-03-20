@@ -1,4 +1,4 @@
-class AppAssets {
+class OLDAppAssets {
   ///
   /// ---- App Logo ----
   static const String appLogoDark = 'assets/appicon/app_logo.png';
@@ -13,8 +13,6 @@ class AppAssets {
   ///
   /// ---- Images ----
   static const String flutterLogo = 'assets/images/flutter_logo.png';
-  static const String eyeIcon = 'assets/images/review_org_wag.png';
-  static const String eyeIconHide = 'assets/images/review_org_wag.png';
   static const String buttonGradientBG = 'assets/images/button_bg.png';
   static const String chatBubbleGradientBG = 'assets/images/chat_bubble_bg_1.png';
 }

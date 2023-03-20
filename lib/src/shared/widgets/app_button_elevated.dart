@@ -1,5 +1,5 @@
+import 'package:beyobox/gen/assets.gen.dart';
 import 'package:flutter/material.dart';
-import '../utility/app_assets.dart';
 import '../utility/app_colors.dart';
 import '../utility/app_const.dart';
 import '../utility/app_utility.dart';
@@ -52,8 +52,8 @@ class AppButtonElevated extends StatelessWidget {
           decoration: BoxDecoration(
             color: fillColor,
             image: fillColor == null
-                ? const DecorationImage(
-                    image: AssetImage(AppAssets.buttonGradientBG),
+                ? DecorationImage(
+                    image: AssetImage(Assets.images.buttonBg.path),
                     fit: BoxFit.cover,
                   )
                 : null,

@@ -28,3 +28,12 @@ the `lib/src/localization` directory.
 To support additional languages, please visit the tutorial on
 [Internationalizing Flutter
 apps](https://flutter.dev/docs/development/accessibility-and-localization/internationalization)
+
+## Deploy Website Build
+
+Follow below steps to upload latest website build
+
+  - fvm flutter clean
+  - fvm flutter pub get
+  - fvm flutter build web
+  - firebase deploy --only hosting
