@@ -1,4 +1,4 @@
-import 'package:beyobox/gen/assets.gen.dart';
+import 'package:awesome_extensions/awesome_extensions.dart';
 import 'package:flutter/material.dart';
 import '../utility/app_colors.dart';
 import '../utility/app_const.dart';
@@ -50,13 +50,14 @@ class AppButtonElevated extends StatelessWidget {
           padding: padding,
           clipBehavior: Clip.hardEdge,
           decoration: BoxDecoration(
-            color: fillColor,
-            image: fillColor == null
-                ? DecorationImage(
-                    image: AssetImage(Assets.images.buttonBg.path),
-                    fit: BoxFit.cover,
-                  )
-                : null,
+            borderRadius: borderRadius ?? BorderRadius.circular(cornerRadius),
+            color: fillColor ?? context.primaryColor,
+            // image: fillColor == null
+            //     ? DecorationImage(
+            //         image: AssetImage(Assets.images.buttonBg.path),
+            //         fit: BoxFit.cover,
+            //       )
+            //     : null,
             // gradient: fillColor == null
             //     ? const LinearGradient(
             //         colors: [
@@ -65,15 +66,14 @@ class AppButtonElevated extends StatelessWidget {
             //         ],
             //       )
             //     : null,
-            borderRadius: borderRadius ?? BorderRadius.circular(cornerRadius),
-            boxShadow: [
-              if (showShadow)
-                BoxShadow(
-                  color: fillColor ?? AppColors.buttonGradient2,
-                  offset: const Offset(0, 2),
-                  blurRadius: 1,
-                ),
-            ],
+            // boxShadow: [
+            //   if (showShadow)
+            //     BoxShadow(
+            //       color: fillColor ?? AppColors.buttonGradient2,
+            //       offset: const Offset(0, 2),
+            //       blurRadius: 1,
+            //     ),
+            // ],
           ),
           child: ElevatedButton(
             onPressed: () {
@@ -114,8 +114,8 @@ class AppButtonElevated extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 5),
                     child: isLoding
-                        ? const CircularProgressIndicator(
-                            color: Colors.white,
+                        ? CircularProgressIndicator(
+                            color: textColor,
                             strokeWidth: 1.5,
                           )
                         : Text(

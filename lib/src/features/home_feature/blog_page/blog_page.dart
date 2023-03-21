@@ -37,6 +37,8 @@ class BlogPage extends StatelessWidget {
             ).value.orDefault.toInt(),
             mainAxisSpacing: 30,
             crossAxisSpacing: 30,
+            // childAspectRatio: 2 / 3,
+            mainAxisExtent: 500,
           ),
           children: [
             BlogItemWidget(

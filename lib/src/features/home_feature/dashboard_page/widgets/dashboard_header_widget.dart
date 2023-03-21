@@ -44,9 +44,12 @@ class _DashboardHeaderWidgetState extends State<DashboardHeaderWidget> {
               visibleWhen: const [
                 Condition.largerThan(name: MOBILE),
               ],
-              child: Text(
-                AppLocalizations.of(context)!.dashboardBeyoBoxSolution,
-                style: Theme.of(context).textTheme.displaySmall,
+              child: Padding(
+                padding: const EdgeInsets.only(right: 10.0),
+                child: Text(
+                  AppLocalizations.of(context)!.dashboardBeyoBoxSolution,
+                  style: Theme.of(context).textTheme.displaySmall,
+                ),
               ),
             ),
             Expanded(

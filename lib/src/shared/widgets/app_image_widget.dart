@@ -90,7 +90,7 @@ class AppImageWidget extends StatelessWidget {
     ///
     if (imageUrl.isEmpty) {
       return Image.asset(
-        Assets.images.flutterLogo.path,
+        Assets.images.placeholderImage.path,
         // AppAssets.placeholderImage,
         fit: fit,
         width: width,

@@ -10,6 +10,7 @@ import 'features/sample_feature/sample_item_details_view.dart';
 import 'features/sample_feature/sample_item_list_view.dart';
 import 'features/settings/settings_controller.dart';
 import 'features/settings/settings_view.dart';
+import 'shared/utility/app_colors.dart';
 
 /// The Widget that configures your application.
 class MyApp extends StatelessWidget {
@@ -79,11 +80,11 @@ class MyApp extends StatelessWidget {
               const ResponsiveBreakpoint.resize(1200, name: DESKTOP),
               const ResponsiveBreakpoint.autoScale(2460, name: "4K"),
             ],
-            // background: Container(
-            //   color: settingsController.themeMode == ThemeMode.dark
-            //       ? AppColors.scaffoldBackgroundDark
-            //       : AppColors.scaffoldBackground,
-            // ),
+            background: Container(
+              color: settingsController.themeMode == ThemeMode.dark
+                  ? AppColors.scaffoldBackgroundDark
+                  : AppColors.scaffoldBackground,
+            ),
           ),
 
           /*

@@ -3,6 +3,89 @@ import 'app_colors.dart';
 import 'app_theme_data_text_style.dart';
 
 ThemeData lightTheme = ThemeData.from(colorScheme: const ColorScheme.light()).copyWith(
+  primaryColor: AppColors.primary,
+  cardTheme: myMaterialCardTheme,
+  textTheme: myBaseTextTheme,
+  buttonTheme: myMaterialButtonThemeData,
+  // bannerTheme: myMaterialBannerThemeData,
+  // bottomAppBarTheme: myMaterialBottomAppbarTheme,
+  // ------ FPW? --------
+  bottomNavigationBarTheme: myMaterialBottomNavigationBarThemeData,
+  iconTheme: myMaterialIconThemeData,
+  //floatingActionButtonTheme: myMaterialFloatingActionBarThemeData,
+  // ------ FPW? --------
+  appBarTheme: myMaterialAppBarTheme,
+  scaffoldBackgroundColor: AppColors.scaffoldBackground,
+  // dataTableTheme: myMaterialDataTableThemeData,
+  // ------ FPW? --------
+  //dialogTheme: myMaterialDialogTheme,
+  dividerTheme: myMaterialDividerThemeData,
+  elevatedButtonTheme: myMaterialElevatedButtonThemeData,
+  // navigationRailTheme: myMaterialNavigationRailThemeData,
+  // outlinedButtonTheme: myMaterialOutlineButtonThemeData,
+  // pageTransitionsTheme: myMaterialPageTransitionTheme,
+  popupMenuTheme: myMaterialPopupMenuThemeData,
+  //radioTheme: myMaterialRadioThemeData,
+  //scrollbarTheme: myMaterialScrollbarThemeData,
+  // // FPW provided so we need to do a MaterialSliderData and CupertinoSliderData in the
+  // // Material and Cupertino builder blocks of the PlatformSlider instead
+  // sliderTheme: myMaterialSliderThemeData,
+  //snackBarTheme: myMaterialSnackbarThemeData,
+  //// FPW provided so we need to do a MaterialSwitchData and a CupertinoSwitchData instead which
+  //// gets used in the PlatformSwitch material and cupertino builder blocks
+  ////switchTheme: myMaterialSwitchThemeData,
+  tabBarTheme: myMaterialTabBarTheme,
+  //textButtonTheme: myMaterialTextButtonThemeData,
+  textSelectionTheme: myMaterialTextSelectionThemeData,
+  // timePickerTheme: myMaterialTimePickerThemeData,
+  // toggleButtonsTheme: myMaterialToggleButtonThemeData,
+  // tooltipTheme: myMaterialTooltipThemeData,
+);
+
+ThemeData darkTheme = ThemeData.from(colorScheme: const ColorScheme.dark()).copyWith(
+  cardTheme: myMaterialCardTheme,
+  textTheme: myBaseTextTheme,
+  buttonTheme: myMaterialButtonThemeData,
+  //bannerTheme: myMaterialBannerThemeData,
+  //bottomAppBarTheme: myMaterialBottomAppbarTheme,
+  //// FPW?
+  bottomNavigationBarTheme: myMaterialBottomNavigationBarThemeData,
+  iconTheme: myMaterialIconThemeData,
+  //floatingActionButtonTheme: myMaterialFloatingActionBarThemeData,
+  //// FPW?
+  appBarTheme: myMaterialAppBarTheme,
+  scaffoldBackgroundColor: AppColors.scaffoldBackground,
+  //dataTableTheme: myMaterialDataTableThemeData,
+  //// FPW?
+  //dialogTheme: myMaterialDialogTheme,
+  dividerTheme: myMaterialDividerThemeData,
+  elevatedButtonTheme: myMaterialElevatedButtonThemeData,
+  //navigationRailTheme: myMaterialNavigationRailThemeData,
+  //outlinedButtonTheme: myMaterialOutlineButtonThemeData,
+  //pageTransitionsTheme: myMaterialPageTransitionTheme,
+  popupMenuTheme: myMaterialPopupMenuThemeData,
+  //radioTheme: myMaterialRadioThemeData,
+  //scrollbarTheme: myMaterialScrollbarThemeData,
+  //// FPW provided so we need to do a MaterialSliderData and CupertinoSliderData in the
+  //// Material and Cupertino builder blocks of the PlatformSlider instead
+  ////sliderTheme: myMaterialSliderThemeData,
+  //snackBarTheme: myMaterialSnackbarThemeData,
+  //// FPW provided so we need to do a MaterialSwitchData and a CupertinoSwitchData instead which
+  //// gets used in the PlatformSwitch material and cupertino builder blocks
+  ////switchTheme: myMaterialSwitchThemeData,
+  tabBarTheme: myMaterialTabBarTheme,
+  //textButtonTheme: myMaterialTextButtonThemeData,
+  textSelectionTheme: myMaterialTextSelectionThemeData,
+  //timePickerTheme: myMaterialTimePickerThemeData,
+  //toggleButtonsTheme: myMaterialToggleButtonThemeData,
+  //tooltipTheme: myMaterialTooltipThemeData,
+);
+
+//---------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------
+
+/*
+ThemeData lightTheme = ThemeData.from(colorScheme: const ColorScheme.light()).copyWith(
   appBarTheme: AppBarTheme(
     color: AppColors.scaffoldBackground,
     iconTheme: myMaterialIconThemeData,
@@ -64,6 +147,40 @@ ThemeData darkTheme = ThemeData.from(
   bottomNavigationBarTheme: myMaterialBottomNavigationBarThemeData,
   highlightColor: AppColors.chatUserBackground,
   sliderTheme: myMaterialSliderThemeData,
+);
+*/
+
+//---------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------
+
+// define myAppBarTheme
+AppBarTheme myMaterialAppBarTheme = AppBarTheme(
+  color: AppColors.scaffoldBackground,
+  iconTheme: myMaterialIconThemeData,
+);
+
+// define button theme
+ButtonThemeData myMaterialButtonThemeData = const ButtonThemeData(
+  buttonColor: AppColors.primary,
+  shape: RoundedRectangleBorder(),
+  textTheme: ButtonTextTheme.accent,
+);
+
+// define elevatedButtonTheme
+ElevatedButtonThemeData myMaterialElevatedButtonThemeData = ElevatedButtonThemeData(
+  style: ElevatedButton.styleFrom(
+    backgroundColor: AppColors.primary, // background (button) color
+    foregroundColor: Colors.white, // foreground (text) color
+  ),
+);
+
+// define card theme
+CardTheme myMaterialCardTheme = const CardTheme(
+  shape: RoundedRectangleBorder(
+    borderRadius: BorderRadius.all(
+      Radius.circular(8.0),
+    ),
+  ),
 );
 
 // define myTabBarTheme

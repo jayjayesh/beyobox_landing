@@ -32,24 +32,38 @@ class BlogItemWidget extends StatelessWidget {
           padding: const EdgeInsets.all(8.0),
           child: Column(
             mainAxisSize: MainAxisSize.min,
-            crossAxisAlignment: CrossAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               AppImageWidget(height: 100, width: double.infinity, imageUrl: imageUrl),
-              20.heightBox,
+              10.heightBox,
               Text(date, style: context.bodyMedium),
               20.heightBox,
               RichText(text: TextSpan(text: title, style: context.titleLarge)),
               20.heightBox,
-              RichText(text: TextSpan(text: description, style: context.bodyMedium)),
-              20.heightBox,
-              Row(
-                children: [
-                  AppButtonElevated(
-                    text: AppLocalizations.of(context)!.homeCardWidgetButtonMore,
-                    fillColor: context.primaryColor,
-                    onPressed: onPresssReadMoreButton,
+              Flexible(
+                child: RichText(
+                  // NOTE : if used (TextOverflow.ellipsis) this widget breaks in mobile phones
+                  overflow: TextOverflow.fade,
+                  text: TextSpan(
+                    style: context.bodyMedium,
+                    children: [
+                      TextSpan(
+                        text: description,
+                      )
+                    ],
                   ),
-                ],
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(top: 12.0, bottom: 5),
+                child: Row(
+                  children: [
+                    AppButtonElevated(
+                      text: AppLocalizations.of(context)!.homeCardWidgetButtonMore,
+                      onPressed: onPresssReadMoreButton,
+                    ),
+                  ],
+                ),
               )
             ],
           ),
