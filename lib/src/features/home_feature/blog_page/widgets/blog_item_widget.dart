@@ -34,16 +34,23 @@ class BlogItemWidget extends StatelessWidget {
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              AppImageWidget(height: 200, width: double.infinity, imageUrl: imageUrl),
+              Card(
+                clipBehavior: Clip.hardEdge,
+                child: AppImageWidget(
+                  height: 200,
+                  width: double.infinity,
+                  imageUrl: imageUrl,
+                ),
+              ),
               10.heightBox,
               Text(date, style: context.bodyMedium),
               20.heightBox,
-              RichText(text: TextSpan(text: title, style: context.titleLarge)),
+              RichText(text: TextSpan(text: title, style: context.headlineSmall)),
               20.heightBox,
               RichText(
                 // NOTE : if used (TextOverflow.fade) this widget breaks in mobile phones
                 overflow: TextOverflow.ellipsis,
-                maxLines: 6,
+                maxLines: 5,
                 text: TextSpan(
                   style: context.bodyMedium,
                   children: [

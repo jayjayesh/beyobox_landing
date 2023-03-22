@@ -8,35 +8,92 @@
 // ignore_for_file: directives_ordering,unnecessary_import,implicit_dynamic_list_literal,deprecated_member_use
 
 import 'package:flutter/widgets.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:flutter/services.dart';
 
 class $AssetsImagesGen {
   const $AssetsImagesGen();
 
   /// File path: assets/images/button_bg.png
-  AssetGenImage get buttonBg =>
-      const AssetGenImage('assets/images/button_bg.png');
+  AssetGenImage get buttonBg => const AssetGenImage('assets/images/button_bg.png');
 
   /// File path: assets/images/chat_bubble_bg_1.png
-  AssetGenImage get chatBubbleBg1 =>
-      const AssetGenImage('assets/images/chat_bubble_bg_1.png');
+  AssetGenImage get chatBubbleBg1 => const AssetGenImage('assets/images/chat_bubble_bg_1.png');
+
+  /// File path: assets/images/client_page_logo_1.webp
+  AssetGenImage get clientPageLogo1 => const AssetGenImage('assets/images/client_page_logo_1.webp');
+
+  /// File path: assets/images/client_page_logo_2.webp
+  AssetGenImage get clientPageLogo2 => const AssetGenImage('assets/images/client_page_logo_2.webp');
+
+  /// File path: assets/images/client_page_logo_3.webp
+  AssetGenImage get clientPageLogo3 => const AssetGenImage('assets/images/client_page_logo_3.webp');
+
+  /// File path: assets/images/client_page_logo_4.webp
+  AssetGenImage get clientPageLogo4 => const AssetGenImage('assets/images/client_page_logo_4.webp');
+
+  /// File path: assets/images/client_page_logo_5.webp
+  AssetGenImage get clientPageLogo5 => const AssetGenImage('assets/images/client_page_logo_5.webp');
+
+  /// File path: assets/images/client_page_logo_6.webp
+  AssetGenImage get clientPageLogo6 => const AssetGenImage('assets/images/client_page_logo_6.webp');
 
   /// File path: assets/images/flutter_logo.png
-  AssetGenImage get flutterLogo =>
-      const AssetGenImage('assets/images/flutter_logo.png');
+  AssetGenImage get flutterLogo => const AssetGenImage('assets/images/flutter_logo.png');
+
+  /// File path: assets/images/home_page_img.webp
+  AssetGenImage get homePageImg => const AssetGenImage('assets/images/home_page_img.webp');
+
+  /// File path: assets/images/home_page_our_cliets.webp
+  AssetGenImage get homePageOurCliets => const AssetGenImage('assets/images/home_page_our_cliets.webp');
+
+  /// File path: assets/images/home_page_our_solution.webp
+  AssetGenImage get homePageOurSolution => const AssetGenImage('assets/images/home_page_our_solution.webp');
+
+  /// File path: assets/images/home_page_our_team.webp
+  AssetGenImage get homePageOurTeam => const AssetGenImage('assets/images/home_page_our_team.webp');
+
+  /// File path: assets/images/home_page_your_success_img.webp
+  AssetGenImage get homePageYourSuccessImg => const AssetGenImage('assets/images/home_page_your_success_img.webp');
 
   /// File path: assets/images/placeholder_image.png
-  AssetGenImage get placeholderImage =>
-      const AssetGenImage('assets/images/placeholder_image.png');
+  AssetGenImage get placeholderImage => const AssetGenImage('assets/images/placeholder_image.png');
 
   /// List of all assets
-  List<AssetGenImage> get values =>
-      [buttonBg, chatBubbleBg1, flutterLogo, placeholderImage];
+  List<AssetGenImage> get values => [
+        buttonBg,
+        chatBubbleBg1,
+        clientPageLogo1,
+        clientPageLogo2,
+        clientPageLogo3,
+        clientPageLogo4,
+        clientPageLogo5,
+        clientPageLogo6,
+        flutterLogo,
+        homePageImg,
+        homePageOurCliets,
+        homePageOurSolution,
+        homePageOurTeam,
+        homePageYourSuccessImg,
+        placeholderImage
+      ];
+}
+
+class $AssetsSvgGen {
+  const $AssetsSvgGen();
+
+  /// File path: assets/svg/feedback_thankyou.svg
+  SvgGenImage get feedbackThankyou => const SvgGenImage('assets/svg/feedback_thankyou.svg');
+
+  /// List of all assets
+  List<SvgGenImage> get values => [feedbackThankyou];
 }
 
 class Assets {
   Assets._();
 
   static const $AssetsImagesGen images = $AssetsImagesGen();
+  static const $AssetsSvgGen svg = $AssetsSvgGen();
 }
 
 class AssetGenImage {
@@ -98,6 +155,59 @@ class AssetGenImage {
   }
 
   ImageProvider provider() => AssetImage(_assetName);
+
+  String get path => _assetName;
+
+  String get keyName => _assetName;
+}
+
+class SvgGenImage {
+  const SvgGenImage(this._assetName);
+
+  final String _assetName;
+
+  SvgPicture svg({
+    Key? key,
+    bool matchTextDirection = false,
+    AssetBundle? bundle,
+    String? package,
+    double? width,
+    double? height,
+    BoxFit fit = BoxFit.contain,
+    AlignmentGeometry alignment = Alignment.center,
+    bool allowDrawingOutsideViewBox = false,
+    WidgetBuilder? placeholderBuilder,
+    String? semanticsLabel,
+    bool excludeFromSemantics = false,
+    SvgTheme theme = const SvgTheme(),
+    ColorFilter? colorFilter,
+    @deprecated Color? color,
+    @deprecated BlendMode colorBlendMode = BlendMode.srcIn,
+    @deprecated Clip? clipBehavior,
+    @deprecated bool cacheColorFilter = false,
+  }) {
+    return SvgPicture.asset(
+      _assetName,
+      key: key,
+      matchTextDirection: matchTextDirection,
+      bundle: bundle,
+      package: package,
+      width: width,
+      height: height,
+      fit: fit,
+      alignment: alignment,
+      allowDrawingOutsideViewBox: allowDrawingOutsideViewBox,
+      placeholderBuilder: placeholderBuilder,
+      semanticsLabel: semanticsLabel,
+      excludeFromSemantics: excludeFromSemantics,
+      theme: theme,
+      colorFilter: colorFilter,
+      color: color,
+      colorBlendMode: colorBlendMode,
+      clipBehavior: clipBehavior ?? Clip.none,
+      cacheColorFilter: cacheColorFilter,
+    );
+  }
 
   String get path => _assetName;
 

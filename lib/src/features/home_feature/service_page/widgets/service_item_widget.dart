@@ -24,9 +24,12 @@ class ServiceItemWidget extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Card(child: AppImageWidget(height: 200, imageUrl: imageUrl)),
+          Card(
+            clipBehavior: Clip.hardEdge,
+            child: AppImageWidget(height: 200, imageUrl: imageUrl),
+          ),
           20.heightBox,
-          RichText(text: TextSpan(text: title, style: context.titleLarge)),
+          RichText(text: TextSpan(text: title, style: context.headlineMedium)),
           20.heightBox,
           Expanded(child: RichText(text: TextSpan(text: description, style: context.bodyMedium))),
         ],

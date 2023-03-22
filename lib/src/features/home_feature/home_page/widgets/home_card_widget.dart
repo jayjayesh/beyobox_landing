@@ -33,7 +33,7 @@ class HomeCardWidget extends StatelessWidget {
             children: [
               Text.rich(TextSpan(text: title, style: context.titleLarge)),
               20.heightBox,
-              AppImageWidget(height: 100, imageUrl: imageUrl),
+              Card(clipBehavior: Clip.hardEdge, child: AppImageWidget(height: 100, imageUrl: imageUrl)),
               20.heightBox,
               RichText(text: TextSpan(text: description, style: context.bodyMedium)),
               20.heightBox,

@@ -1,4 +1,5 @@
 import 'package:awesome_extensions/awesome_extensions.dart';
+import 'package:beyobox/gen/assets.gen.dart';
 import 'package:beyobox/src/features/home_feature/home_page/widgets/home_card_widget.dart';
 import 'package:beyobox/src/shared/widgets/app_image_widget.dart';
 import 'package:flutter/material.dart';
@@ -56,12 +57,13 @@ class HomePage extends StatelessWidget {
                         ),
                       ),
                     ),
-                    const ResponsiveRowColumnItem(
+                    ResponsiveRowColumnItem(
                       child: SizedBox(
-                        width: 300,
-                        height: 300,
+                        width: 500,
+                        height: 350,
                         child: AppImageWidget(
-                          imageUrl: '',
+                          fit: BoxFit.contain,
+                          imageUrl: Assets.svg.feedbackThankyou.path,
                         ),
                       ),
                     ),
@@ -79,7 +81,7 @@ class HomePage extends StatelessWidget {
                         padding: const EdgeInsets.only(top: 20),
                         title: AppLocalizations.of(context)!.homePageCard1Heading,
                         description: AppLocalizations.of(context)!.homePageCard1Description,
-                        imageUrl: '',
+                        imageUrl: Assets.images.homePageYourSuccessImg.path,
                         onPresssMoreButton: () {},
                       ),
                     ),
@@ -88,7 +90,7 @@ class HomePage extends StatelessWidget {
                         padding: const EdgeInsets.only(top: 20),
                         title: AppLocalizations.of(context)!.homePageCard2Heading,
                         description: AppLocalizations.of(context)!.homePageCard2Description,
-                        imageUrl: '',
+                        imageUrl: Assets.images.homePageOurTeam.path,
                         onPresssMoreButton: () {},
                       ),
                     ),
@@ -97,7 +99,7 @@ class HomePage extends StatelessWidget {
                         padding: const EdgeInsets.only(top: 20),
                         title: AppLocalizations.of(context)!.homePageCard3Heading,
                         description: AppLocalizations.of(context)!.homePageCard3Description,
-                        imageUrl: '',
+                        imageUrl: Assets.images.homePageOurSolution.path,
                         onPresssMoreButton: () {},
                       ),
                     ),

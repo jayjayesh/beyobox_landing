@@ -1,3 +1,4 @@
+import 'package:beyobox/gen/assets.gen.dart';
 import 'package:beyobox/src/features/home_feature/service_page/widgets/service_item_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:beyobox/src/shared/utility/app_const.dart';
@@ -52,22 +53,22 @@ class ServicePage extends StatelessWidget {
                   ),
                   children: [
                     ServiceItemWidget(
-                      imageUrl: '',
+                      imageUrl: Assets.images.homePageYourSuccessImg.path,
                       title: AppLocalizations.of(context)!.servicePageService1Title,
                       description: AppLocalizations.of(context)!.servicePageService1Desc,
                     ),
                     ServiceItemWidget(
-                      imageUrl: '',
+                      imageUrl: Assets.images.homePageOurTeam.path,
                       title: AppLocalizations.of(context)!.servicePageService2Title,
                       description: AppLocalizations.of(context)!.servicePageService2Desc,
                     ),
                     ServiceItemWidget(
-                      imageUrl: '',
+                      imageUrl: Assets.images.homePageOurSolution.path,
                       title: AppLocalizations.of(context)!.servicePageService3Title,
                       description: AppLocalizations.of(context)!.servicePageService3Desc,
                     ),
                     ServiceItemWidget(
-                      imageUrl: '',
+                      imageUrl: Assets.images.homePageOurCliets.path,
                       title: AppLocalizations.of(context)!.servicePageService4Title,
                       description: AppLocalizations.of(context)!.servicePageService4Desc,
                     ),

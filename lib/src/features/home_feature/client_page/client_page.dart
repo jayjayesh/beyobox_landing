@@ -1,6 +1,8 @@
 import 'package:awesome_extensions/awesome_extensions.dart';
+import 'package:beyobox/gen/assets.gen.dart';
 import 'package:beyobox/src/shared/utility/app_extensions.dart';
 import 'package:beyobox/src/features/home_feature/client_page/widgets/client_item_widget.dart';
+import 'package:beyobox/src/shared/widgets/app_image_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:beyobox/src/shared/utility/app_const.dart';
 import 'package:beyobox/src/shared/utility/app_scaffold_wraper.dart';
@@ -45,84 +47,53 @@ class ClientPage extends StatelessWidget {
                 ),
                 30.heightBox,
                 Table(
-                  children: const [
+                  children: [
                     TableRow(
                       children: [
-                        SizedBox(
-                          width: 200,
-                          height: 200,
-                          child: Center(
-                            child: Placeholder(
-                              child: SizedBox(
-                                width: 100,
-                                height: 100,
-                              ),
-                            ),
-                          ),
+                        AppImageWidget(
+                          width: 100,
+                          height: 100,
+                          imageUrl: Assets.images.clientPageLogo1.path,
+                          fit: BoxFit.contain,
                         ),
-                        SizedBox(
-                          width: 200,
-                          height: 200,
-                          child: Center(
-                            child: Placeholder(
-                              child: SizedBox(
-                                width: 100,
-                                height: 100,
-                              ),
-                            ),
-                          ),
+                        AppImageWidget(
+                          width: 100,
+                          height: 100,
+                          imageUrl: Assets.images.clientPageLogo2.path,
+                          fit: BoxFit.contain,
                         ),
-                        SizedBox(
-                          width: 200,
-                          height: 200,
-                          child: Center(
-                            child: Placeholder(
-                              child: SizedBox(
-                                width: 100,
-                                height: 100,
-                              ),
-                            ),
-                          ),
+                        AppImageWidget(
+                          width: 100,
+                          height: 100,
+                          imageUrl: Assets.images.clientPageLogo3.path,
+                          fit: BoxFit.contain,
                         ),
                       ],
                     ),
+                    TableRow(children: [
+                      30.heightBox,
+                      30.heightBox,
+                      30.heightBox,
+                    ]),
                     TableRow(
                       children: [
-                        SizedBox(
-                          width: 200,
-                          height: 200,
-                          child: Center(
-                            child: Placeholder(
-                              child: SizedBox(
-                                width: 100,
-                                height: 100,
-                              ),
-                            ),
-                          ),
+                        AppImageWidget(
+                          width: 100,
+                          height: 100,
+                          imageUrl: Assets.images.clientPageLogo4.path,
+                          fit: BoxFit.contain,
                         ),
-                        SizedBox(
-                          width: 200,
-                          height: 200,
-                          child: Center(
-                            child: Placeholder(
-                              child: SizedBox(
-                                width: 100,
-                                height: 100,
-                              ),
-                            ),
-                          ),
+                        AppImageWidget(
+                          width: 100,
+                          height: 100,
+                          imageUrl: Assets.images.clientPageLogo5.path,
+                          fit: BoxFit.contain,
                         ),
-                        SizedBox(
-                          width: 200,
-                          height: 200,
-                          child: Center(
-                            child: Placeholder(
-                              child: SizedBox(
-                                width: 100,
-                                height: 100,
-                              ),
-                            ),
-                          ),
+                        AppImageWidget(
+                          width: 100,
+                          height: 100,
+                          imageUrl: Assets.images.clientPageLogo6.path,
+                          fit: BoxFit.contain,
                         ),
                       ],
                     ),

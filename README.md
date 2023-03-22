@@ -20,6 +20,8 @@ include with your application.
 The `assets/images` directory contains [resolution-aware
 images](https://flutter.dev/docs/development/ui/assets-and-images#resolution-aware).
 
+`To generate assets` : fvm flutter packages pub run build_runner build --delete-conflicting-outputs
+
 ## Localization
 
 This project generates localized messages based on arb files found in
