@@ -1,3 +1,4 @@
+import 'package:beyobox/src/shared/utility/app_colors.dart';
 import 'package:flutter/material.dart';
 // import 'package:flutter/painting.dart';
 // import 'package:flutter/rendering.dart';
@@ -44,10 +45,30 @@ TextTheme myBaseTextTheme = TextTheme(
   labelSmall: myOverline,
 );
 
+TextTheme myBaseTextThemeDark = TextTheme(
+  displayLarge: myHeadline1.copyWith(color: AppColors.textWhite),
+  displayMedium: myHeadline2.copyWith(color: AppColors.textWhite),
+  displaySmall: myHeadline3.copyWith(color: AppColors.textWhite),
+  headlineMedium: myHeadline4.copyWith(color: AppColors.textWhite),
+  headlineSmall: myHeadline5.copyWith(color: AppColors.textWhite),
+  titleLarge: myHeadline6.copyWith(color: AppColors.textWhite),
+  titleMedium: mySubtitle1.copyWith(color: AppColors.textWhite),
+  titleSmall: mySubtitle2.copyWith(color: AppColors.textWhite),
+  bodyLarge: myBodytext1.copyWith(color: AppColors.textWhite),
+  bodyMedium: myBodytext2.copyWith(color: AppColors.textWhite),
+  bodySmall: myCaption.copyWith(color: AppColors.textWhite),
+  labelLarge: myButton.copyWith(color: AppColors.textWhite),
+  labelSmall: myOverline.copyWith(color: AppColors.textWhite),
+);
+
+//-----------------------------------
+
 TextStyle myHeadline1 = GoogleFonts.notoSerif(
   textStyle: const TextStyle(
     // ignore: avoid_redundant_argument_values
     inherit: true,
+    color: AppColors.textBlack,
+    backgroundColor: AppColors.transparent,
     // color: myColorSchemes.onSurface,
     // backgroundColor: myColorSchemes.background,
     fontSize: 96,
@@ -65,6 +86,8 @@ TextStyle myHeadline2 = GoogleFonts.notoSerif(
   textStyle: const TextStyle(
     // ignore: avoid_redundant_argument_values
     inherit: true,
+    color: AppColors.textBlack,
+    backgroundColor: AppColors.transparent,
     // color: myColorSchemes.onSurface,
     // backgroundColor: myColorSchemes.background,
     fontSize: 60,
@@ -82,6 +105,8 @@ TextStyle myHeadline3 = GoogleFonts.notoSerif(
   textStyle: const TextStyle(
     // ignore: avoid_redundant_argument_values
     inherit: true,
+    color: AppColors.textBlack,
+    backgroundColor: AppColors.transparent,
     // color: myColorSchemes.onSurface,
     // backgroundColor: myColorSchemes.background,
     fontSize: 48,
@@ -99,6 +124,8 @@ TextStyle myHeadline4 = GoogleFonts.notoSerif(
   textStyle: const TextStyle(
     // ignore: avoid_redundant_argument_values
     inherit: true,
+    color: AppColors.textBlack,
+    backgroundColor: AppColors.transparent,
     // color: myColorSchemes.onSurface,
     // backgroundColor: myColorSchemes.background,
     fontSize: 34,
@@ -116,6 +143,8 @@ TextStyle myHeadline5 = GoogleFonts.notoSerif(
   textStyle: const TextStyle(
     // ignore: avoid_redundant_argument_values
     inherit: true,
+    color: AppColors.textBlack,
+    backgroundColor: AppColors.transparent,
     // color: myColorSchemes.onSurface,
     // backgroundColor: myColorSchemes.background,
     fontSize: 24,
@@ -133,6 +162,8 @@ TextStyle myHeadline6 = GoogleFonts.notoSerif(
   textStyle: const TextStyle(
     // ignore: avoid_redundant_argument_values
     inherit: true,
+    color: AppColors.textBlack,
+    backgroundColor: AppColors.transparent,
     // color: myColorSchemes.onSurface,
     // backgroundColor: myColorSchemes.background,
     fontSize: 20,
@@ -150,6 +181,8 @@ TextStyle mySubtitle1 = GoogleFonts.notoSerif(
   textStyle: const TextStyle(
     // ignore: avoid_redundant_argument_values
     inherit: true,
+    color: AppColors.textBlack,
+    backgroundColor: AppColors.transparent,
     // color: myColorSchemes.onSurface,
     // backgroundColor: myColorSchemes.background,
     fontSize: 16,
@@ -167,6 +200,8 @@ TextStyle mySubtitle2 = GoogleFonts.notoSerif(
   textStyle: const TextStyle(
     // ignore: avoid_redundant_argument_values
     inherit: true,
+    color: AppColors.textBlack,
+    backgroundColor: AppColors.transparent,
     // color: myColorSchemes.onSurface,
     // backgroundColor: myColorSchemes.background,
     fontSize: 14,
@@ -183,6 +218,8 @@ TextStyle myBodytext1 = GoogleFonts.notoSans(
   textStyle: const TextStyle(
     // ignore: avoid_redundant_argument_values
     inherit: true,
+    color: AppColors.textBlack,
+    backgroundColor: AppColors.transparent,
     // color: myColorSchemes.onSurface,
     // backgroundColor: myColorSchemes.background,
     fontSize: 16,
@@ -200,6 +237,8 @@ TextStyle myBodytext2 = GoogleFonts.notoSans(
   textStyle: const TextStyle(
     // ignore: avoid_redundant_argument_values
     inherit: true,
+    color: AppColors.textBlack,
+    backgroundColor: AppColors.transparent,
     // color: myColorSchemes.onSurface,
     // backgroundColor: myColorSchemes.background,
     fontSize: 14,
@@ -217,6 +256,8 @@ TextStyle myCaption = GoogleFonts.notoSans(
   textStyle: const TextStyle(
     // ignore: avoid_redundant_argument_values
     inherit: true,
+    color: AppColors.textBlack,
+    backgroundColor: AppColors.transparent,
     // color: myColorSchemes.onSurface,
     // backgroundColor: myColorSchemes.background,
     fontSize: 12,
@@ -234,6 +275,8 @@ TextStyle myButton = GoogleFonts.notoSans(
   textStyle: const TextStyle(
     // ignore: avoid_redundant_argument_values
     inherit: true,
+    color: AppColors.textBlack,
+    backgroundColor: AppColors.transparent,
     // color: myColorSchemes.onSurface,
     // backgroundColor: myColorSchemes.background,
     fontSize: 14,
@@ -251,6 +294,8 @@ TextStyle myOverline = GoogleFonts.notoSans(
   textStyle: const TextStyle(
     // ignore: avoid_redundant_argument_values
     inherit: true,
+    color: AppColors.textBlack,
+    backgroundColor: AppColors.transparent,
     // color: myColorSchemes.onSurface,
     // backgroundColor: myColorSchemes.background,
     fontSize: 10,

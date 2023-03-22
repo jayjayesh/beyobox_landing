@@ -44,7 +44,7 @@ ThemeData lightTheme = ThemeData.from(colorScheme: const ColorScheme.light()).co
 
 ThemeData darkTheme = ThemeData.from(colorScheme: const ColorScheme.dark()).copyWith(
   cardTheme: myMaterialCardTheme,
-  textTheme: myBaseTextTheme,
+  textTheme: myBaseTextThemeDark,
   buttonTheme: myMaterialButtonThemeData,
   //bannerTheme: myMaterialBannerThemeData,
   //bottomAppBarTheme: myMaterialBottomAppbarTheme,
@@ -54,7 +54,7 @@ ThemeData darkTheme = ThemeData.from(colorScheme: const ColorScheme.dark()).copy
   //floatingActionButtonTheme: myMaterialFloatingActionBarThemeData,
   //// FPW?
   appBarTheme: myMaterialAppBarTheme,
-  scaffoldBackgroundColor: AppColors.scaffoldBackground,
+  scaffoldBackgroundColor: AppColors.scaffoldBackgroundDark,
   //dataTableTheme: myMaterialDataTableThemeData,
   //// FPW?
   //dialogTheme: myMaterialDialogTheme,
