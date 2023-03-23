@@ -1,6 +1,7 @@
 import 'package:awesome_extensions/awesome_extensions.dart';
 import 'package:beyobox/src/features/home_feature/contact_us_page/contact_us_page.dart';
 import 'package:beyobox/src/features/home_feature/dashboard_page/widgets/dashboard_header_tab_bar_items.dart';
+import 'package:beyobox/src/shared/utility/app_enums.dart';
 import 'package:flutter/material.dart';
 import 'package:beyobox/src/features/home_feature/blog_page/blog_page.dart';
 import 'package:beyobox/src/features/home_feature/client_page/client_page.dart';
@@ -9,6 +10,8 @@ import 'package:beyobox/src/features/home_feature/project_page/project_page.dart
 import 'package:beyobox/src/features/home_feature/service_page/service_page.dart';
 import 'package:beyobox/src/shared/utility/app_const.dart';
 import 'package:beyobox/src/shared/utility/app_scaffold_wraper.dart';
+import 'package:get/get.dart';
+import 'controller/hearder_tab_bar_item_controller.dart';
 import 'widgets/dashboard_header_widget.dart';
 
 final GlobalKey<ScaffoldState> dashboardPageScaffoldKey = GlobalKey<ScaffoldState>();
@@ -85,6 +88,8 @@ class _DashboardPageState extends State<DashboardPage> with TickerProviderStateM
         floatingActionButton: FloatingActionButton(
           onPressed: () {
             // Add your onPressed code here!
+            var controller = Get.find<DashboardHeaderTabBarItemWidgetController>();
+            controller.selectedTab = AppEnumDashboardTab.contactus;
           },
           // backgroundColor: context.theme.primaryColor,
           child: const Icon(
