@@ -1,4 +1,5 @@
 import 'package:awesome_extensions/awesome_extensions.dart';
+import 'package:beyobox/src/features/home_feature/contact_us_page/contact_us_page.dart';
 import 'package:beyobox/src/features/home_feature/dashboard_page/widgets/dashboard_header_tab_bar_items.dart';
 import 'package:flutter/material.dart';
 import 'package:beyobox/src/features/home_feature/blog_page/blog_page.dart';
@@ -30,6 +31,7 @@ class _DashboardPageState extends State<DashboardPage> with TickerProviderStateM
     ProjectPage(),
     ClientPage(),
     BlogPage(),
+    ContactUsPage()
   ];
 
   @override
@@ -38,28 +40,6 @@ class _DashboardPageState extends State<DashboardPage> with TickerProviderStateM
     dashboardPageTabBarController = TabController(length: _tabBarViews.length, vsync: this);
     dashboardHeaderTabBarItemWidget = DashboardHeaderTabBarItemWidget(
       tabBarController: dashboardPageTabBarController,
-      // onPressedHome: () {
-      //   _tabBarController.animateTo(0);
-      //   // if (dashboardPageScaffoldKey.currentState!.isDrawerOpen) {
-      //   // dashboardPageScaffoldKey.currentState!.closeEndDrawer();
-      //   // }
-      // },
-      // onPressedService: () {
-      //   // _dashboardPageScaffoldKey.currentState!.openEndDrawer();
-      //   _tabBarController.animateTo(1);
-      // },
-      // onPressedProject: () {
-      //   // _dashboardPageScaffoldKey.currentState!.openEndDrawer();
-      //   _tabBarController.animateTo(2);
-      // },
-      // onPressedClient: () {
-      //   // _dashboardPageScaffoldKey.currentState!.openEndDrawer();
-      //   _tabBarController.animateTo(3);
-      // },
-      // onPressedBlog: () {
-      //   // _dashboardPageScaffoldKey.currentState!.openEndDrawer();
-      //   _tabBarController.animateTo(4);
-      // },
     );
   }
 

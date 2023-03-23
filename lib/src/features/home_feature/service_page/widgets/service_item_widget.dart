@@ -31,7 +31,12 @@ class ServiceItemWidget extends StatelessWidget {
           20.heightBox,
           RichText(text: TextSpan(text: title, style: context.headlineSmall)),
           20.heightBox,
-          Expanded(child: RichText(text: TextSpan(text: description, style: context.bodyMedium))),
+          Expanded(
+              child: RichText(
+            text: TextSpan(text: description, style: context.bodyMedium),
+            maxLines: 5,
+            overflow: TextOverflow.ellipsis,
+          )),
         ],
       ),
     );

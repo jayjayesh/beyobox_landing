@@ -11,7 +11,7 @@ class AppToast {
     required String message,
     Duration duration = const Duration(seconds: 5),
     Color backgroundColor = AppColors.toastBackGround,
-    SnackbarType type = SnackbarType.normal,
+    AppEnumSnackbarType type = AppEnumSnackbarType.normal,
   }) {
     ///
     /// Guard

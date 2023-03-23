@@ -20,7 +20,7 @@ include with your application.
 The `assets/images` directory contains [resolution-aware
 images](https://flutter.dev/docs/development/ui/assets-and-images#resolution-aware).
 
-`To generate assets` : fvm flutter packages pub run build_runner build --delete-conflicting-outputs
+`TO GENERATE assets` : fvm flutter packages pub run build_runner build --delete-conflicting-outputs
 
 ## Localization
 
@@ -30,6 +30,8 @@ the `lib/src/localization` directory.
 To support additional languages, please visit the tutorial on
 [Internationalizing Flutter
 apps](https://flutter.dev/docs/development/accessibility-and-localization/internationalization)
+
+`TO GENERATE/UPDATE : string file` : fvm flutter pub get
 
 ## Deploy Website Build
 

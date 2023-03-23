@@ -6,100 +6,84 @@ import 'app_colors.dart';
 //   busy,
 // }
 
-enum DashboardTab { home, services, projects, clients, blogs }
+enum AppEnumDashboardTab { home, services, projects, clients, blogs, contactus }
 
-enum USER_TYPE {
+enum AppEnumUserType {
   none,
   admin,
   parent,
   provider,
 }
 
-enum DEVICE_TYPE {
+enum AppEnumDeviceType {
   android,
   ios,
 }
 
-enum GenderType {
+enum AppEnumGenderType {
   male,
   female,
   other,
 }
 
-enum SubCategory {
-  options,
-  futures,
-  positional,
-  intradayCash,
-  misc,
-}
-
-enum AttributesType {
-  attributes,
-  expReturn,
-  marginReq,
-  maxDrawDown,
-  expNumTrades,
-}
-
-enum apiCallingStatus {
+enum AppEnumApiCallingStatus {
   none,
   loading,
   success,
   error,
 }
 
-enum SnackbarType {
+enum AppEnumSnackbarType {
   normal,
   success,
   error,
 }
 
-extension SnackbarTypeExtension on SnackbarType {
+extension SnackbarTypeExtension on AppEnumSnackbarType {
   Color get getToastBackgroundColor {
     switch (this) {
-      case SnackbarType.normal:
+      case AppEnumSnackbarType.normal:
         return AppColors.toastBackGround;
-      case SnackbarType.success:
+      case AppEnumSnackbarType.success:
         return AppColors.toastBackGroundGreen;
-      case SnackbarType.error:
+      case AppEnumSnackbarType.error:
         return AppColors.toastBackGroundRed;
     }
   }
 
   Color get getToastTextColor {
     switch (this) {
-      case SnackbarType.normal:
+      case AppEnumSnackbarType.normal:
         return AppColors.textBlack;
-      case SnackbarType.success:
+      case AppEnumSnackbarType.success:
         return AppColors.textWhite;
-      case SnackbarType.error:
+      case AppEnumSnackbarType.error:
         return AppColors.textWhite;
     }
   }
 }
 
-enum AppTheme {
+enum AppEnumTheme {
   lightTheme,
   darkTheme,
 }
 
-enum PostVoteType {
+enum AppEnumPostVoteType {
   upVote,
   downVote,
 }
 
-enum ReactionType {
+enum AppEnumReactionType {
   addReaction,
   removeReaction,
 }
 
-enum PostType {
+enum AppEnumPostType {
   imagePost,
   videoPost,
 }
 
-enum EmojiType {
+enum AppEnumEmojiType {
   like,
   laugh,
   good,
@@ -108,12 +92,12 @@ enum EmojiType {
   pray,
 }
 
-enum StreategyType {
+enum AppEnumStrategyType {
   option,
   future,
 }
 
-enum ChatMsgType {
+enum AppEnumChatMsgType {
   noTextNoMediaNothing, // 0
   textMessage, // 1
   image, // 2
@@ -123,14 +107,14 @@ enum ChatMsgType {
   sticker, // 6
 }
 
-enum BottomTabBar {
+enum AppEnumBottomTabBar {
   home,
   message,
   orders,
   profile,
 }
 
-enum FilterServicesPageType {
+enum AppEnumFilterServicesPageType {
   petTypeBeforeLogin,
   categoriesBeforeLogin,
   petTapped,
@@ -142,72 +126,33 @@ enum FilterServicesPageType {
   // allPopularServicesBeforeLogin,
 }
 
-// extension ToStringFilterServicesPageType on FilterServicesPageType {
-//   String get string {
-//     return toString().split('.').last;
-//   }
-// }
-
-// enum order status
-enum ORDER_TAB_STATUS {
-  active,
-  completed,
-  cancelled,
-}
-
-// enum order status
-enum BILLING_TAB_STATUS {
-  accountDetails,
-  namageCards,
-}
-
-enum ORDER_STATUS_LOG_MASTER_ID {
-  blankObjcToAdjustIDwithIndex,
-  pending, // ID = 1
-  completed, // ID = 2
-  orderCanceleByProvider,
-  orderCanceleByParent,
-  orderCanceleByBoth,
-  orderCancellationDeclinedByParent,
-  orderCancellationDeclinedByProvider,
-  escalated,
-  orderCompletedByProvider,
-  orderCompletionDeclinedByParent,
-}
-
-// extension ToStringOrderStatus on OrderStatus {
-//   String get string {
-//     return toString().split('.').last;
-//   }
-// }
-
-enum PAGINATION_STATE {
+enum AppEnumPaginationState {
   loading,
   free,
   reachedLastPage,
   error,
 }
 
-enum ONLINE_STATUS {
+enum AppOnlineStatus {
   online,
   offline,
   busy,
 }
 
-extension OnlineStatusExtension on ONLINE_STATUS {
+extension OnlineStatusExtension on AppOnlineStatus {
   String get string {
     return toString().split('.').last;
   }
 
   Color get color {
     switch (this) {
-      case ONLINE_STATUS.online:
+      case AppOnlineStatus.online:
         return AppColors.onlineStatusOnline;
 
-      case ONLINE_STATUS.offline:
+      case AppOnlineStatus.offline:
         return AppColors.onlineStatusOffline;
 
-      case ONLINE_STATUS.busy:
+      case AppOnlineStatus.busy:
         return AppColors.onlineStatusBusy;
 
       default:
@@ -216,7 +161,7 @@ extension OnlineStatusExtension on ONLINE_STATUS {
   }
 }
 
-enum MESSAGE_TYPE {
+enum AppEnumMessageType {
   text,
   headerText,
   textBlockUser,
@@ -227,25 +172,25 @@ enum MESSAGE_TYPE {
   file,
 }
 
-extension MessageTypeExtension on MESSAGE_TYPE {
+extension MessageTypeExtension on AppEnumMessageType {
   String get string {
     return toString().split('.').last;
   }
 }
 
-enum MESSAGE_STATUS {
+enum AppEnumMessageStatus {
   sent,
   delivered,
   read,
 }
 
-enum MESSAGE_REACTION {
+enum AppEnumMessageReaction {
   none,
   like,
   dislike,
 }
 
-extension MessageReactionExtension on MESSAGE_REACTION {
+extension MessageReactionExtension on AppEnumMessageReaction {
   // String get image {
   //   switch (this) {
   //     case MESSAGE_REACTION.like:
@@ -258,7 +203,7 @@ extension MessageReactionExtension on MESSAGE_REACTION {
   // }
 }
 
-enum POPUP_MENU_BUTTON {
+enum AppEnumPopupMenuButton {
   messagePageArchivedChat,
   messagePageBlockedContact,
   chatPageUnArchivedChat,
@@ -284,94 +229,55 @@ enum POPUP_MENU_BUTTON {
   orderDecline,
 }
 
-extension PopupMenuTypeExtension on POPUP_MENU_BUTTON {
+extension PopupMenuTypeExtension on AppEnumPopupMenuButton {
   String get title {
     switch (this) {
-      case POPUP_MENU_BUTTON.messagePageArchivedChat:
+      case AppEnumPopupMenuButton.messagePageArchivedChat:
         return 'Archived chat';
-      case POPUP_MENU_BUTTON.messagePageBlockedContact:
+      case AppEnumPopupMenuButton.messagePageBlockedContact:
         return 'Blocked Contact';
-      case POPUP_MENU_BUTTON.chatPageSearchMessage:
+      case AppEnumPopupMenuButton.chatPageSearchMessage:
         return 'Search Message';
-      case POPUP_MENU_BUTTON.chatPageArchivedChat:
+      case AppEnumPopupMenuButton.chatPageArchivedChat:
         return 'Archived Chat';
-      case POPUP_MENU_BUTTON.chatPageBlock:
+      case AppEnumPopupMenuButton.chatPageBlock:
         return 'Block';
-      case POPUP_MENU_BUTTON.chatPageUnArchivedChat:
+      case AppEnumPopupMenuButton.chatPageUnArchivedChat:
         return 'Unarchive chat';
-      case POPUP_MENU_BUTTON.chatBubbleWidgetEdit:
+      case AppEnumPopupMenuButton.chatBubbleWidgetEdit:
         return 'Edit';
-      case POPUP_MENU_BUTTON.chatBubbleWidgetDelete:
+      case AppEnumPopupMenuButton.chatBubbleWidgetDelete:
         return 'Delete';
-      case POPUP_MENU_BUTTON.myServiceTypeHorizontalItemWidgetEdit:
+      case AppEnumPopupMenuButton.myServiceTypeHorizontalItemWidgetEdit:
         return 'Edit';
-      case POPUP_MENU_BUTTON.myServiceTypeHorizontalItemWidgetRemove:
+      case AppEnumPopupMenuButton.myServiceTypeHorizontalItemWidgetRemove:
         return 'Remove';
-      case POPUP_MENU_BUTTON.petDetailMessanger:
+      case AppEnumPopupMenuButton.petDetailMessanger:
         return 'Messanger';
-      case POPUP_MENU_BUTTON.petDetailFacebook:
+      case AppEnumPopupMenuButton.petDetailFacebook:
         return 'Facebook';
-      case POPUP_MENU_BUTTON.petDetailTwitter:
+      case AppEnumPopupMenuButton.petDetailTwitter:
         return 'Twitter';
-      case POPUP_MENU_BUTTON.petDetailLinkedin:
+      case AppEnumPopupMenuButton.petDetailLinkedin:
         return 'Linkedin';
-      case POPUP_MENU_BUTTON.orderCancel:
+      case AppEnumPopupMenuButton.orderCancel:
         return 'Cancel Order';
-      case POPUP_MENU_BUTTON.orderComplete:
+      case AppEnumPopupMenuButton.orderComplete:
         return 'Complete Order';
-      case POPUP_MENU_BUTTON.orderContact:
+      case AppEnumPopupMenuButton.orderContact:
         return 'Contact';
-      case POPUP_MENU_BUTTON.orderClaimRefund:
+      case AppEnumPopupMenuButton.orderClaimRefund:
         return 'Claim Refund';
-      case POPUP_MENU_BUTTON.orderClaimPayment:
+      case AppEnumPopupMenuButton.orderClaimPayment:
         return 'Claim Payment';
-      case POPUP_MENU_BUTTON.orderEscalate:
+      case AppEnumPopupMenuButton.orderEscalate:
         return 'Escalate This Order';
-      case POPUP_MENU_BUTTON.orderAccept:
+      case AppEnumPopupMenuButton.orderAccept:
         return 'Accept';
-      case POPUP_MENU_BUTTON.orderDecline:
+      case AppEnumPopupMenuButton.orderDecline:
         return 'Decline';
       default:
         return '';
     }
-  }
-}
-
-/// Dashboard
-enum DASHBOARD_RESPONSE_DATA_TYPE {
-  noData,
-  nifty,
-  banknifty,
-  jackpot,
-  multibaggerStocks,
-}
-
-// Influencer Profile
-enum INFLUENCER_PROFILE_TABS {
-  club,
-  streategy,
-  aboutMe,
-}
-
-extension InfluencerProfileTabExtension on INFLUENCER_PROFILE_TABS {
-  INFLUENCER_PROFILE_TABS getEnumFromIndex(int index) {
-    var tempEnumValue = INFLUENCER_PROFILE_TABS.club;
-
-    ///
-    switch (index) {
-      case 0:
-        tempEnumValue = INFLUENCER_PROFILE_TABS.club;
-        break;
-      case 1:
-        tempEnumValue = INFLUENCER_PROFILE_TABS.streategy;
-        break;
-      case 2:
-        tempEnumValue = INFLUENCER_PROFILE_TABS.aboutMe;
-        break;
-      default:
-    }
-
-    ///
-    return tempEnumValue;
   }
 }

@@ -1,3 +1,4 @@
+import 'package:awesome_extensions/awesome_extensions.dart';
 import 'package:beyobox/src/features/home_feature/dashboard_page/widgets/dashboard_header_tab_bar_items.dart';
 import 'package:beyobox/src/shared/widgets/app_button_elevated.dart';
 import 'package:flutter/material.dart';
@@ -22,15 +23,30 @@ class DashboardHeaderWidget extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(AppConst.defaultHorizontalPadding),
         child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          // mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Container(
               width: 210,
-              margin: const EdgeInsets.only(right: 10.0),
-              child: RichText(
-                text: TextSpan(
-                  text: AppLocalizations.of(context)!.dashboardBeyoBoxSolution,
-                  style: Theme.of(context).textTheme.headlineMedium,
+              margin: const EdgeInsetsDirectional.only(end: 10.0),
+              child: IntrinsicHeight(
+                child: Row(
+                  children: [
+                    Container(
+                      width: 6,
+                      margin: const EdgeInsets.symmetric(vertical: 9),
+                      color: context.theme.primaryColor,
+                      // color: context.textTheme.headlineMedium!.color,
+                    ),
+                    10.widthBox,
+                    Expanded(
+                      child: RichText(
+                        text: TextSpan(
+                          text: AppLocalizations.of(context)!.dashboardBeyoBoxSolution,
+                          style: context.textTheme.headlineMedium?.bold.copyWith(color: context.theme.primaryColor),
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
               ),
             ),
@@ -40,12 +56,18 @@ class DashboardHeaderWidget extends StatelessWidget {
                 Condition.smallerThan(name: MOBILE),
                 Condition.equals(name: MOBILE),
               ],
-              child: AppButtonElevated(
-                leadingWidget: const Icon(Icons.menu_rounded),
-                width: 100,
-                onPressed: () {
-                  onPressedSideMenu?.call();
-                },
+              child: Expanded(
+                child: Align(
+                  alignment: AlignmentDirectional.centerEnd,
+                  child: AppButtonElevated(
+                    leadingWidget: const Icon(Icons.menu_rounded, size: 37),
+                    height: 50,
+                    width: 50,
+                    onPressed: () {
+                      onPressedSideMenu?.call();
+                    },
+                  ),
+                ),
               ),
             ),
             ResponsiveVisibility(
