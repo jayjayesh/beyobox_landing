@@ -38,6 +38,9 @@ class $AssetsImagesGen {
   /// File path: assets/images/client_page_logo_6.webp
   AssetGenImage get clientPageLogo6 => const AssetGenImage('assets/images/client_page_logo_6.webp');
 
+  /// File path: assets/images/contact_us_static_map.webp
+  AssetGenImage get contactUsStaticMap => const AssetGenImage('assets/images/contact_us_static_map.webp');
+
   /// File path: assets/images/flutter_logo.png
   AssetGenImage get flutterLogo => const AssetGenImage('assets/images/flutter_logo.png');
 
@@ -69,6 +72,7 @@ class $AssetsImagesGen {
         clientPageLogo4,
         clientPageLogo5,
         clientPageLogo6,
+        contactUsStaticMap,
         flutterLogo,
         homePageImg,
         homePageOurCliets,

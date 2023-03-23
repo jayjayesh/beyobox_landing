@@ -6,9 +6,9 @@ class DashboardHeaderTabBarItemWidgetController extends GetxController {
   final tabItemWidth = 100.0;
 
   ///
-  DashboardTab _selectedTab = DashboardTab.home;
-  DashboardTab get selectedTab => _selectedTab;
-  set selectedTab(DashboardTab value) {
+  AppEnumDashboardTab _selectedTab = AppEnumDashboardTab.home;
+  AppEnumDashboardTab get selectedTab => _selectedTab;
+  set selectedTab(AppEnumDashboardTab value) {
     _selectedTab = value;
     if (dashboardPageScaffoldKey.currentState!.isEndDrawerOpen) {
       dashboardPageScaffoldKey.currentState!.closeEndDrawer();
@@ -16,7 +16,7 @@ class DashboardHeaderTabBarItemWidgetController extends GetxController {
     update();
 
     ///
-    Future.delayed(const Duration(milliseconds: 500), () {
+    Future.delayed(const Duration(milliseconds: 400), () {
       dashboardPageTabBarController.animateTo(value.index);
     });
   }
