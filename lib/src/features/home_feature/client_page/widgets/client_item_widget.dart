@@ -21,7 +21,7 @@ class ClientItemWidget extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          RichText(text: TextSpan(text: title, style: context.headlineMedium)),
+          RichText(text: TextSpan(text: title, style: context.headlineSmall)),
           20.heightBox,
           Expanded(child: RichText(text: TextSpan(text: description, style: context.bodyMedium))),
         ],

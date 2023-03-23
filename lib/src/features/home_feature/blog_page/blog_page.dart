@@ -26,12 +26,20 @@ class BlogPage extends StatelessWidget {
               context,
               defaultValue: 1,
               valueWhen: const [
-                Condition.equals(
+                // Condition.equals(
+                //   name: MOBILE,
+                //   value: 2,
+                // ),
+                // Condition.largerThan(
+                //   name: MOBILE,
+                //   value: 3,
+                // ),
+                Condition.largerThan(
                   name: MOBILE,
                   value: 2,
                 ),
                 Condition.largerThan(
-                  name: MOBILE,
+                  name: TABLET,
                   value: 3,
                 ),
               ],

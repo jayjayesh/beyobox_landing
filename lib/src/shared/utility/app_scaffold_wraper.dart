@@ -106,8 +106,14 @@ class _AppScaffoldWrapperState extends State<AppScaffoldWrapper> {
           ),
         );
       },
-      child: ColoredBox(
+      child: Container(
         color: widget.scaffoldBackground ?? Theme.of(context).scaffoldBackgroundColor,
+        // color: Colors.amber[500],
+        // alignment: Alignment.center,
+        // constraints: const BoxConstraints(
+        //   maxWidth: 1200,
+        //   minWidth: 450,
+        // ),
         child: SafeArea(
           top: widget.topSafeArea,
           bottom: widget.bottomSafeArea,

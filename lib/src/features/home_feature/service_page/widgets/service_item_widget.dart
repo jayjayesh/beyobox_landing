@@ -29,7 +29,7 @@ class ServiceItemWidget extends StatelessWidget {
             child: AppImageWidget(height: 200, imageUrl: imageUrl),
           ),
           20.heightBox,
-          RichText(text: TextSpan(text: title, style: context.headlineMedium)),
+          RichText(text: TextSpan(text: title, style: context.headlineSmall)),
           20.heightBox,
           Expanded(child: RichText(text: TextSpan(text: description, style: context.bodyMedium))),
         ],

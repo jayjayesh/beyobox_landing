@@ -1,3 +1,4 @@
+import 'package:awesome_extensions/awesome_extensions.dart';
 import 'package:beyobox/gen/assets.gen.dart';
 import 'package:beyobox/src/features/home_feature/service_page/widgets/service_item_widget.dart';
 import 'package:flutter/material.dart';
@@ -26,7 +27,7 @@ class ServicePage extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(vertical: AppConst.defaultHorizontalPadding),
                   child: Text(
                     AppLocalizations.of(context)!.servicePageHeading,
-                    style: Theme.of(context).textTheme.displaySmall,
+                    style: context.headlineSmall,
                   ),
                 ),
                 GridView(

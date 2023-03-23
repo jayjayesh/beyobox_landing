@@ -23,7 +23,7 @@ class HomeCardWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 300,
+      width: 350,
       padding: padding,
       child: Card(
         child: Padding(
@@ -35,7 +35,11 @@ class HomeCardWidget extends StatelessWidget {
               20.heightBox,
               Card(clipBehavior: Clip.hardEdge, child: AppImageWidget(height: 100, imageUrl: imageUrl)),
               20.heightBox,
-              RichText(text: TextSpan(text: description, style: context.bodyMedium)),
+              RichText(
+                overflow: TextOverflow.ellipsis,
+                maxLines: 10,
+                text: TextSpan(text: description, style: context.bodyMedium),
+              ),
               20.heightBox,
               //const Spacer(),
               Row(
