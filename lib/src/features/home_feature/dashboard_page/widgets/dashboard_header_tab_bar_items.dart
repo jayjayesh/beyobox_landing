@@ -9,10 +9,10 @@ import 'package:get/get.dart';
 class DashboardHeaderTabBarItemWidget extends StatelessWidget {
   const DashboardHeaderTabBarItemWidget({
     super.key,
-    required this.tabBarController,
+    this.tabBarController,
   });
 
-  final TabController tabBarController;
+  final TabController? tabBarController;
 
   // final controller = Get.find<DashboardHeaderTabBarItemWidgetController>();
   @override
