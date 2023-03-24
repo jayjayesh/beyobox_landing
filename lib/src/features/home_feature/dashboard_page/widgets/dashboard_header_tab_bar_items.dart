@@ -31,56 +31,64 @@ class DashboardHeaderTabBarItemWidget extends StatelessWidget {
           children: [
             AppButtonElevated(
               text: AppLocalizations.of(context)!.dashboardButtonTextHome,
-              fillColor: controller.selectedTab == AppEnumDashboardTab.home ? AppColors.primary : AppColors.buttonGray,
-              showShadow: controller.selectedTab == AppEnumDashboardTab.home ? true : false,
+              fillColor: controller.selectedTab == AppEnumDashboardTab.home
+                  ? context.theme.primaryColor
+                  : AppColors.buttonGray,
+              // showShadow: controller.selectedTab == AppEnumDashboardTab.home ? true : false,
               onPressed: () {
                 controller.selectedTab = AppEnumDashboardTab.home;
               },
             ),
             AppButtonElevated(
               text: AppLocalizations.of(context)!.dashboardButtonTextService,
-              fillColor:
-                  controller.selectedTab == AppEnumDashboardTab.services ? AppColors.primary : AppColors.buttonGray,
-              showShadow: controller.selectedTab == AppEnumDashboardTab.services ? true : false,
+              fillColor: controller.selectedTab == AppEnumDashboardTab.services
+                  ? context.theme.primaryColor
+                  : AppColors.buttonGray,
+              // showShadow: controller.selectedTab == AppEnumDashboardTab.services ? true : false,
               onPressed: () {
                 controller.selectedTab = AppEnumDashboardTab.services;
               },
             ),
             AppButtonElevated(
               text: AppLocalizations.of(context)!.dashboardButtonTextProjects,
-              fillColor:
-                  controller.selectedTab == AppEnumDashboardTab.projects ? AppColors.primary : AppColors.buttonGray,
-              showShadow: controller.selectedTab == AppEnumDashboardTab.projects ? true : false,
+              fillColor: controller.selectedTab == AppEnumDashboardTab.projects
+                  ? context.theme.primaryColor
+                  : AppColors.buttonGray,
+              // showShadow: controller.selectedTab == AppEnumDashboardTab.projects ? true : false,
               onPressed: () {
                 controller.selectedTab = AppEnumDashboardTab.projects;
               },
             ),
             AppButtonElevated(
               text: AppLocalizations.of(context)!.dashboardButtonTextClients,
-              fillColor:
-                  controller.selectedTab == AppEnumDashboardTab.clients ? AppColors.primary : AppColors.buttonGray,
-              showShadow: controller.selectedTab == AppEnumDashboardTab.clients ? true : false,
+              fillColor: controller.selectedTab == AppEnumDashboardTab.clients
+                  ? context.theme.primaryColor
+                  : AppColors.buttonGray,
+              // showShadow: controller.selectedTab == AppEnumDashboardTab.clients ? true : false,
               onPressed: () {
                 controller.selectedTab = AppEnumDashboardTab.clients;
               },
             ),
             AppButtonElevated(
               text: AppLocalizations.of(context)!.dashboardButtonTextBlog,
-              fillColor: controller.selectedTab == AppEnumDashboardTab.blogs ? AppColors.primary : AppColors.buttonGray,
-              showShadow: controller.selectedTab == AppEnumDashboardTab.blogs ? true : false,
+              fillColor: controller.selectedTab == AppEnumDashboardTab.blogs
+                  ? context.theme.primaryColor
+                  : AppColors.buttonGray,
+              // showShadow: controller.selectedTab == AppEnumDashboardTab.blogs ? true : false,
               onPressed: () {
                 controller.selectedTab = AppEnumDashboardTab.blogs;
               },
             ),
-            AppButtonElevated(
-              text: AppLocalizations.of(context)!.dashboardButtonTextContactUs,
-              fillColor:
-                  controller.selectedTab == AppEnumDashboardTab.contactus ? AppColors.primary : AppColors.buttonGray,
-              showShadow: controller.selectedTab == AppEnumDashboardTab.contactus ? true : false,
-              onPressed: () {
-                controller.selectedTab = AppEnumDashboardTab.contactus;
-              },
-            ),
+            // AppButtonElevated(
+            //   text: AppLocalizations.of(context)!.dashboardButtonTextContactUs,
+            //   fillColor: controller.selectedTab == AppEnumDashboardTab.contactus
+            //       ? context.theme.primaryColor
+            //       : AppColors.buttonGray,
+            //   // showShadow: controller.selectedTab == AppEnumDashboardTab.contactus ? true : false,
+            //   onPressed: () {
+            //     controller.selectedTab = AppEnumDashboardTab.contactus;
+            //   },
+            // ),
           ],
         );
       },

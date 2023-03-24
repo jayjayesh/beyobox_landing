@@ -17,19 +17,24 @@ class ContactUsAddressWidget extends StatelessWidget {
           RichText(
             text: TextSpan(
               text: AppLocalizations.of(context)!.contactUsPageAddreassTitle,
-              style: context.titleLarge?.copyWith(color: context.theme.primaryColor),
+              style: context.titleLarge?.copyWith(
+                color: context.theme.primaryColor,
+              ),
             ),
           ),
+          5.heightBox,
           RichText(
             text: TextSpan(
               text: AppLocalizations.of(context)!.contactUsPageAddressString,
               style: context.bodyMedium,
             ),
           ),
+          5.heightBox,
           Text(
             AppLocalizations.of(context)!.contactUsPageEmail,
             style: context.bodyMedium,
           ),
+          3.heightBox,
           Row(
             children: [
               Text(

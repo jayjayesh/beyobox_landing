@@ -34,7 +34,7 @@ class DashboardHeaderWidget extends StatelessWidget {
                     Container(
                       width: 6,
                       margin: const EdgeInsets.symmetric(vertical: 9),
-                      color: context.theme.primaryColor,
+                      //color: context.theme.primaryColor,
                       // color: context.textTheme.headlineMedium!.color,
                     ),
                     10.widthBox,
@@ -42,7 +42,9 @@ class DashboardHeaderWidget extends StatelessWidget {
                       child: RichText(
                         text: TextSpan(
                           text: AppLocalizations.of(context)!.dashboardBeyoBoxSolution,
-                          style: context.textTheme.headlineMedium?.bold.copyWith(color: context.theme.primaryColor),
+                          style: context.textTheme.headlineMedium?.bold.copyWith(
+                            color: context.theme.primaryColor,
+                          ),
                         ),
                       ),
                     ),

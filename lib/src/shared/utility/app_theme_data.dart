@@ -2,8 +2,27 @@ import 'package:flutter/material.dart';
 import 'app_colors.dart';
 import 'app_theme_data_text_style.dart';
 
-ThemeData lightTheme = ThemeData.from(colorScheme: const ColorScheme.light()).copyWith(
-  primaryColor: AppColors.primary,
+// ref : used this approch : https://medium.com/geekculture/one-text-theme-to-rule-them-all-8dd6a531a35a
+
+ThemeData lightTheme = ThemeData.from(
+  colorScheme: const ColorScheme.light(
+    primary: AppColors.primary,
+    background: AppColors.scaffoldBackground,
+  ),
+  textTheme: myBaseTextTheme,
+);
+ThemeData darkTheme = ThemeData.from(
+  colorScheme: const ColorScheme.dark(
+    primary: AppColors.primaryDark,
+    background: AppColors.scaffoldBackgroundDark,
+  ),
+  textTheme: myBaseTextThemeDark,
+);
+
+//---------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------
+
+ThemeData lightTheme_old = ThemeData.from(colorScheme: const ColorScheme.light(primary: AppColors.primary)).copyWith(
   cardTheme: myMaterialCardTheme,
   textTheme: myBaseTextTheme,
   buttonTheme: myMaterialButtonThemeData,
@@ -42,7 +61,7 @@ ThemeData lightTheme = ThemeData.from(colorScheme: const ColorScheme.light()).co
   // tooltipTheme: myMaterialTooltipThemeData,
 );
 
-ThemeData darkTheme = ThemeData.from(colorScheme: const ColorScheme.dark()).copyWith(
+ThemeData darkTheme_old = ThemeData.from(colorScheme: const ColorScheme.dark(primary: AppColors.primary)).copyWith(
   cardTheme: myMaterialCardTheme,
   textTheme: myBaseTextThemeDark,
   buttonTheme: myMaterialButtonThemeData,

@@ -63,7 +63,7 @@ class MyApp extends StatelessWidget {
           // preferred ThemeMode (light, dark, or system default) from the
           // SettingsController to display the correct theme.
           theme: lightTheme, //ThemeData(),
-          darkTheme: darkTheme, //ThemeData.dark(),
+          darkTheme: lightTheme, //darkTheme, //ThemeData.dark(),
           themeMode: settingsController.themeMode,
 
           // To make app responsive
