@@ -1,6 +1,6 @@
 import 'package:awesome_extensions/awesome_extensions.dart';
+import 'package:beyobox/src/features/home_feature/dashboard_page/widgets/dashboard_header_menu_button_widget.dart';
 import 'package:beyobox/src/features/home_feature/dashboard_page/widgets/dashboard_header_tab_bar_items.dart';
-import 'package:beyobox/src/shared/widgets/app_button_elevated.dart';
 import 'package:flutter/material.dart';
 import 'package:beyobox/src/shared/utility/app_const.dart';
 import 'package:responsive_framework/responsive_framework.dart';
@@ -60,14 +60,7 @@ class DashboardHeaderWidget extends StatelessWidget {
               child: Expanded(
                 child: Align(
                   alignment: AlignmentDirectional.centerEnd,
-                  child: AppButtonElevated(
-                    leadingWidget: const Icon(Icons.menu_rounded, size: 37),
-                    height: 50,
-                    width: 50,
-                    onPressed: () {
-                      onPressedSideMenu?.call();
-                    },
-                  ),
+                  child: _buildSideMenuButton(context),
                 ),
               ),
             ),
@@ -85,6 +78,13 @@ class DashboardHeaderWidget extends StatelessWidget {
           ],
         ),
       ),
+    );
+  }
+
+  Widget _buildSideMenuButton(BuildContext context) {
+    return const DashboardHeaderMenuButtonWidget(
+      height: 50,
+      width: 50,
     );
   }
 }
