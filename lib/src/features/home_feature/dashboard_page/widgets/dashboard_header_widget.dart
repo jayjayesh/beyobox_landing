@@ -42,6 +42,7 @@ class DashboardHeaderWidget extends StatelessWidget {
                         text: TextSpan(
                           text: AppLocalizations.of(context)!.dashboardBeyoBoxSolution,
                           style: context.textTheme.headlineMedium?.bold.copyWith(
+                            // fontStyle: GoogleFonts.fasthand().fontStyle,
                             color: context.theme.primaryColor,
                           ),
                         ),
