@@ -18,42 +18,40 @@ class ContactUsPage extends StatelessWidget {
         body: ScrollConfiguration(
           // NOTE : remove slider, hide slider, hide scroll indicator
           behavior: ScrollConfiguration.of(context).copyWith(scrollbars: false),
-          child: SingleChildScrollView(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-                20.heightBox,
-                //const SizedBox(height: 70, child: Placeholder()),
-                RichText(
-                  text: TextSpan(
-                    text: AppLocalizations.of(context)!.contactUsPageHeading,
-                    style: context.headlineSmall,
-                  ),
+          child: ListView(
+            // crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              20.heightBox,
+              //const SizedBox(height: 70, child: Placeholder()),
+              RichText(
+                text: TextSpan(
+                  text: AppLocalizations.of(context)!.contactUsPageHeading,
+                  style: context.headlineSmall,
                 ),
-                20.heightBox,
-                ResponsiveRowColumn(
-                  rowMainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  columnMainAxisAlignment: MainAxisAlignment.start,
-                  rowCrossAxisAlignment: CrossAxisAlignment.start,
-                  columnCrossAxisAlignment: CrossAxisAlignment.start,
-                  rowSpacing: 10,
-                  columnSpacing: 10,
-                  layout: ResponsiveWrapper.of(context).isSmallerThan(TABLET)
-                      ? ResponsiveRowColumnType.COLUMN
-                      : ResponsiveRowColumnType.ROW,
-                  children: const [
-                    ResponsiveRowColumnItem(child: ContactUsAddressWidget()),
-                    ResponsiveRowColumnItem(child: ContactUsFormWidget()),
-                  ],
-                ),
-                40.heightBox,
-                AppImageWidget(
-                  height: 500,
-                  imageUrl: Assets.images.contactUsStaticMap.path,
-                ),
-                100.heightBox,
-              ],
-            ),
+              ),
+              20.heightBox,
+              ResponsiveRowColumn(
+                rowMainAxisAlignment: MainAxisAlignment.spaceBetween,
+                columnMainAxisAlignment: MainAxisAlignment.start,
+                rowCrossAxisAlignment: CrossAxisAlignment.start,
+                columnCrossAxisAlignment: CrossAxisAlignment.start,
+                rowSpacing: 10,
+                columnSpacing: 10,
+                layout: ResponsiveWrapper.of(context).isSmallerThan(TABLET)
+                    ? ResponsiveRowColumnType.COLUMN
+                    : ResponsiveRowColumnType.ROW,
+                children: const [
+                  ResponsiveRowColumnItem(child: ContactUsAddressWidget()),
+                  ResponsiveRowColumnItem(child: ContactUsFormWidget()),
+                ],
+              ),
+              40.heightBox,
+              AppImageWidget(
+                height: 500,
+                imageUrl: Assets.images.contactUsStaticMap.path,
+              ),
+              100.heightBox,
+            ],
           ),
         ),
       ),

@@ -29,7 +29,6 @@ class AppInputTextField extends StatelessWidget {
       clipBehavior: Clip.hardEdge,
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
-        // padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
         decoration: BoxDecoration(
           color: backgroundColor,
           borderRadius: BorderRadius.circular(AppConst.buttonCornerRedious),
@@ -38,7 +37,7 @@ class AppInputTextField extends StatelessWidget {
           controller: controller,
           onChanged: onChanged,
           cursorColor: color,
-          maxLines: maxLines,
+          maxLines: maxLines ?? 1,
           keyboardType: keyboardType,
           decoration: InputDecoration(
             icon: icon == null

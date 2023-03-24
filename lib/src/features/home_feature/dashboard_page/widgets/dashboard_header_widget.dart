@@ -34,8 +34,7 @@ class DashboardHeaderWidget extends StatelessWidget {
                     Container(
                       width: 6,
                       margin: const EdgeInsets.symmetric(vertical: 9),
-                      //color: context.theme.primaryColor,
-                      // color: context.textTheme.headlineMedium!.color,
+                      color: context.theme.primaryColor,
                     ),
                     10.widthBox,
                     Expanded(

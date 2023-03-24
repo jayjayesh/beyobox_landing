@@ -1,4 +1,5 @@
 import 'package:awesome_extensions/awesome_extensions.dart';
+import 'package:beyobox/src/shared/utility/app_utility.dart';
 import 'package:beyobox/src/shared/widgets/app_button_elevated.dart';
 import 'package:beyobox/src/shared/widgets/app_input_text_field.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
@@ -39,7 +40,13 @@ class ContactUsFormWidget extends StatelessWidget {
             // fillColor:
             //     controller.selectedTab == AppEnumDashboardTab.contactus ? AppColors.primary : AppColors.buttonGray,
             // showShadow: controller.selectedTab == AppEnumDashboardTab.contactus ? true : false,
-            onPressed: () {},
+            onPressed: () {
+              AppUtility.sendEmail(
+                subject: 'Box Subject',
+                message: 'Hello sir, I want to inquire about your IT services',
+              );
+              // AppUtility.sendWhatsAppMessage('');
+            },
           ),
           20.heightBox,
         ],
