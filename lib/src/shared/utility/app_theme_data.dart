@@ -4,6 +4,22 @@ import 'app_theme_data_text_style.dart';
 
 // ref : used this approch : https://medium.com/geekculture/one-text-theme-to-rule-them-all-8dd6a531a35a
 
+ThemeData lightThemeMaterial3 = ThemeData(
+  useMaterial3: true,
+  colorSchemeSeed: AppColors.primary,
+  brightness: Brightness.light,
+  textTheme: myBaseTextTheme,
+);
+// ThemeData darkThemeMaterial3 = ThemeData(
+//   useMaterial3: true,
+//   colorSchemeSeed: Colors.green,
+//   brightness: Brightness.dark,
+//   textTheme: myBaseTextTheme,
+// );
+
+//---------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------
+
 ThemeData lightTheme = ThemeData.from(
   colorScheme: const ColorScheme.light(
     primary: AppColors.primary,
