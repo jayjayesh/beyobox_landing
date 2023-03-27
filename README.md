@@ -35,6 +35,11 @@ apps](https://flutter.dev/docs/development/accessibility-and-localization/intern
 
 ## Deploy Website Build
 
+[Reference article to select website rendering engine](https://geekyants.com/blog/web-renderers-which-one-to-choose-html-or-canvaskit)
+[select rendering engine inside code](https://docs.flutter.dev/development/platform-integration/web/renderers)
+-- fvm flutter build web --web-renderer canvaskit
+-- fvm flutter build web --web-renderer html
+
 Follow below steps to upload latest website build
 
   - fvm flutter clean

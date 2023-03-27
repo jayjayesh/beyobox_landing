@@ -128,7 +128,7 @@
     }
 
     window.addEventListener('load', function(ev) {
-
+      let useHtml = true;
       var loaderContent = document.querySelector('#loader-content');
 
       // Download main.dart.js
@@ -137,7 +137,11 @@
           serviceWorkerVersion: serviceWorkerVersion,
         },
         onEntrypointLoaded: function(engineInitializer) {
-          engineInitializer.initializeEngine().then(function(appRunner) {
+          // Run-time engine configuration
+          let config = {
+            renderer: useHtml ? "html" : "canvaskit",
+          }
+          engineInitializer.initializeEngine(config).then(function(appRunner) {
             loaderContent.style.opacity = "0";
             loaderContent.style.opacity = "0";
             delay(400).then(() =>
