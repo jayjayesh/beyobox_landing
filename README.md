@@ -37,8 +37,11 @@ apps](https://flutter.dev/docs/development/accessibility-and-localization/intern
 
 [Reference article to select website rendering engine](https://geekyants.com/blog/web-renderers-which-one-to-choose-html-or-canvaskit)
 [select rendering engine inside code](https://docs.flutter.dev/development/platform-integration/web/renderers)
+[Reference article : more advance](https://medium.com/@GSYTech/how-to-optimize-flutter-web-and-how-flutter-web-work-in-html-renderer-b399ffd66718)
 -- fvm flutter build web --web-renderer canvaskit
 -- fvm flutter build web --web-renderer html
+-- there is default rendering mode set inside (web/index.html) (let useHtml = true;)
+
 
 Follow below steps to upload latest website build
 
