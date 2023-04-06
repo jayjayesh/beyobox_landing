@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import 'package:beyobox/src/dependency_injection.dart';
+import 'package:beyobox/src/get_x_dependency_injection.dart';
 import 'package:beyobox/src/injection.dart';
 import 'package:flutter/material.dart';
 
@@ -19,7 +19,7 @@ void main() async {
   // DependencyInjection.init();
   // NOTE : Exception: HandshakeException: Handshake error in client
   HttpOverrides.global = MyProxyHttpOverride();
-  DependencyInjection.init();
+  GetXDependencyInjection.init();
   configureDependencies();
 
   // Run the app and pass in the SettingsController. The app listens to the
