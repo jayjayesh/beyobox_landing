@@ -25,4 +25,11 @@ class ContactUsAddressWidgetConteroller extends GetxController {
       'message': messageController.text,
     });
   }
+
+  void clearText() {
+    nameController.clear();
+    emailController.clear();
+    subjectController.clear();
+    messageController.clear();
+  }
 }

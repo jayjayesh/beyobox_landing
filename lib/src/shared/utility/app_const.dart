@@ -9,13 +9,10 @@ class AppConst {
   static const String iosAppBundleID = 'com.spikeclub.kamai';
   static const String androidAppBundleID = 'com.spikeclub.kamai';
 
-  static const String domainBaseURL = 'https://kamai.app'; // 'https://35.170.238.113';
-  static const String socketMarketTicksBaseURL = 'wss://ticks.kamai.app:3100/cable'; //'wss://kamai.app:3100/cable';
-  static const String socketChatBaseURL = 'wss://kamai.app:3000/cable';
-  // static const String socketBaseURL = 'ws://kamai.app:3100/cable';
-  static const String devBaseURL = '$domainBaseURL:4000';
-  static const String staggingBaseURL = '$domainBaseURL:4000';
-  static const String prodBaseURL = '$domainBaseURL:4000';
+  static const String domainBaseURL = 'http://172.16.0.196';
+  static const String devBaseURL = '$domainBaseURL:8080';
+  static const String staggingBaseURL = '$domainBaseURL:8080';
+  static const String prodBaseURL = '$domainBaseURL:8080';
 
   static const String fcmServerKey = '1234567890';
 

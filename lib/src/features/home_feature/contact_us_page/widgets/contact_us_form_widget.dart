@@ -58,6 +58,9 @@ class ContactUsFormWidget extends StatelessWidget {
                 onPressed: () {
                   ///
                   controller.sendEmail();
+                  // To hide popupMenuButton this widget
+                  controller.clearText();
+                  Navigator.of(context).pop();
 
                   ///
                   // AppUtility.sendEmail(
@@ -74,4 +77,6 @@ class ContactUsFormWidget extends StatelessWidget {
       );
     });
   }
+
+  //-------- Other --------------
 }
