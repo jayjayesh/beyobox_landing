@@ -11,17 +11,19 @@ class AppInputTextField extends StatelessWidget {
   final TextEditingController? controller;
   final int? maxLines;
   final TextInputType? keyboardType;
-  const AppInputTextField({
-    Key? key,
-    this.hintText,
-    this.icon,
-    this.onChanged,
-    this.color = AppColors.textBlack,
-    this.backgroundColor = AppColors.white,
-    this.maxLines,
-    this.keyboardType,
-    this.controller,
-  }) : super(key: key);
+  final String? Function(String?)? validator;
+  const AppInputTextField(
+      {Key? key,
+      this.hintText,
+      this.icon,
+      this.onChanged,
+      this.color = AppColors.textBlack,
+      this.backgroundColor = AppColors.white,
+      this.maxLines,
+      this.keyboardType,
+      this.controller,
+      this.validator})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -33,8 +35,9 @@ class AppInputTextField extends StatelessWidget {
           color: backgroundColor,
           borderRadius: BorderRadius.circular(AppConst.buttonCornerRedious),
         ),
-        child: TextField(
+        child: TextFormField(
           controller: controller,
+          validator: validator,
           onChanged: onChanged,
           cursorColor: color,
           maxLines: maxLines ?? 1,

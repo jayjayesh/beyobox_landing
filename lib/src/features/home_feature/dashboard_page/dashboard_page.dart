@@ -1,5 +1,6 @@
 import 'package:awesome_extensions/awesome_extensions.dart';
 import 'package:beyobox/src/features/home_feature/contact_us_page/contact_us_page.dart';
+import 'package:beyobox/src/features/home_feature/dashboard_page/widgets/dashboard_contact_us_button_widget.dart';
 import 'package:beyobox/src/features/home_feature/dashboard_page/widgets/dashboard_header_tab_bar_items.dart';
 import 'package:flutter/material.dart';
 import 'package:beyobox/src/features/home_feature/blog_page/blog_page.dart';
@@ -82,11 +83,15 @@ class _DashboardPageState extends State<DashboardPage> with TickerProviderStateM
         onEndDrawerChanged: (isOpened) {},
         floatingActionButton: FloatingActionButton(
           onPressed: onPressMessageButton,
-          // backgroundColor: context.theme.primaryColor,
-          child: const Icon(
-            Icons.message_outlined,
-          ),
+          child: const DashboardContactUsButtonWidget(),
         ),
+        // floatingActionButton: FloatingActionButton(
+        //   onPressed: onPressMessageButton,
+        //   // backgroundColor: context.theme.primaryColor,
+        //   child: const Icon(
+        //     Icons.message_outlined,
+        //   ),
+        // ),
       ),
     );
   }

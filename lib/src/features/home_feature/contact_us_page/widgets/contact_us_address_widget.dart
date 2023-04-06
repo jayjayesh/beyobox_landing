@@ -7,7 +7,7 @@ class ContactUsAddressWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
+    return Container(
       padding: const EdgeInsets.all(0.0),
       //  padding: const EdgeInsets.all(8.0),
       child: Column(
