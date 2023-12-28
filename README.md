@@ -1,6 +1,7 @@
-# landing
+# beyobox landing 
 
-A new Flutter project.
+A responsive Flutter web app project.
+check out this link : [https://beyobox-landing.web.app](https://beyobox-landing.web.app/) 
 
 ## Getting Started
 
